@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "type": "last",
+      "start_animation": 0,
+      "end_animation": 2,
+      "number": 1
+    }
+  ],
+  "files": [
+    "slides\\files\\Esfera\\2578476628_1517871200_223132457.mp4",
+    "slides\\files\\Esfera\\2535676517_885716074_2097229513.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

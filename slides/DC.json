@@ -1,0 +1,85 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 2,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 2,
+      "end_animation": 4,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 4,
+      "end_animation": 5,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 6,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 6,
+      "end_animation": 9,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 9,
+      "end_animation": 10,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 10,
+      "end_animation": 11,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 11,
+      "end_animation": 12,
+      "number": 9
+    },
+    {
+      "type": "last",
+      "start_animation": 12,
+      "end_animation": 14,
+      "number": 10
+    }
+  ],
+  "files": [
+    "slides\\files\\DC\\2578476628_962220357_2358810818.mp4",
+    "slides\\files\\DC\\2535676517_2537019207_2437872653.mp4",
+    "slides\\files\\DC\\2535676517_3238523741_1201358937.mp4",
+    "slides\\files\\DC\\2535676517_2990640270_3976478761.mp4",
+    "slides\\files\\DC\\2535676517_1796535152_3976478761.mp4",
+    "slides\\files\\DC\\2535676517_3784035793_323350991.mp4",
+    "slides\\files\\DC\\2535676517_819862185_302731071.mp4",
+    "slides\\files\\DC\\2535676517_68788492_1164788809.mp4",
+    "slides\\files\\DC\\2535676517_1475671275_2518429307.mp4",
+    "slides\\files\\DC\\2535676517_1266531953_2269363146.mp4",
+    "slides\\files\\DC\\2535676517_3125173137_3739443739.mp4",
+    "slides\\files\\DC\\2535676517_3100997252_2257916167.mp4",
+    "slides\\files\\DC\\2535676517_1348721712_273666169.mp4",
+    "slides\\files\\DC\\2535676517_3073779459_3870169344.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

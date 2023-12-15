@@ -1,0 +1,105 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 5,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 6,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 6,
+      "end_animation": 7,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 7,
+      "end_animation": 8,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 8,
+      "end_animation": 9,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 9,
+      "end_animation": 10,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 10,
+      "end_animation": 11,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 11,
+      "end_animation": 12,
+      "number": 9
+    },
+    {
+      "type": "slide",
+      "start_animation": 12,
+      "end_animation": 13,
+      "number": 10
+    },
+    {
+      "type": "slide",
+      "start_animation": 13,
+      "end_animation": 14,
+      "number": 11
+    },
+    {
+      "type": "slide",
+      "start_animation": 14,
+      "end_animation": 15,
+      "number": 12
+    },
+    {
+      "type": "last",
+      "start_animation": 15,
+      "end_animation": 16,
+      "number": 13
+    }
+  ],
+  "files": [
+    "slides\\files\\PosetChrom\\2578476628_1775357907_223132457.mp4",
+    "slides\\files\\PosetChrom\\2535676517_1657160914_807943280.mp4",
+    "slides\\files\\PosetChrom\\2535676517_572293698_223132457.mp4",
+    "slides\\files\\PosetChrom\\2535676517_598462624_3828759704.mp4",
+    "slides\\files\\PosetChrom\\2535676517_3100709678_604599024.mp4",
+    "slides\\files\\PosetChrom\\2535676517_693156699_2235411824.mp4",
+    "slides\\files\\PosetChrom\\2535676517_3573933516_3287802473.mp4",
+    "slides\\files\\PosetChrom\\2535676517_1468918795_359913990.mp4",
+    "slides\\files\\PosetChrom\\2535676517_4040997922_223132457.mp4",
+    "slides\\files\\PosetChrom\\2535676517_3653358602_881213824.mp4",
+    "slides\\files\\PosetChrom\\2535676517_272859610_2666320235.mp4",
+    "slides\\files\\PosetChrom\\2535676517_3889888649_3707218536.mp4",
+    "slides\\files\\PosetChrom\\2535676517_2655317132_2787165626.mp4",
+    "slides\\files\\PosetChrom\\2535676517_886175148_2085599068.mp4",
+    "slides\\files\\PosetChrom\\2535676517_990766325_3403334374.mp4",
+    "slides\\files\\PosetChrom\\2535676517_3063906699_3403334374.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

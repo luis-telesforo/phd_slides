@@ -1,0 +1,97 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 2,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 2,
+      "end_animation": 6,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 6,
+      "end_animation": 11,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 11,
+      "end_animation": 12,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 12,
+      "end_animation": 14,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 14,
+      "end_animation": 15,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 15,
+      "end_animation": 16,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 16,
+      "end_animation": 17,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 17,
+      "end_animation": 18,
+      "number": 9
+    },
+    {
+      "type": "slide",
+      "start_animation": 18,
+      "end_animation": 19,
+      "number": 10
+    },
+    {
+      "type": "last",
+      "start_animation": 19,
+      "end_animation": 20,
+      "number": 11
+    }
+  ],
+  "files": [
+    "slides\\files\\Matroides\\2578476628_602191815_3099596236.mp4",
+    "slides\\files\\Matroides\\2535676517_3752247495_2608943037.mp4",
+    "slides\\files\\Matroides\\2535676517_2837278287_188650627.mp4",
+    "slides\\files\\Matroides\\2535676517_3075125463_188650627.mp4",
+    "slides\\files\\Matroides\\2535676517_2141654381_3518693465.mp4",
+    "slides\\files\\Matroides\\2535676517_1192425609_1352754179.mp4",
+    "slides\\files\\Matroides\\2535676517_577291271_3746752778.mp4",
+    "slides\\files\\Matroides\\2535676517_1572400759_1223617298.mp4",
+    "slides\\files\\Matroides\\2535676517_2068262873_472711867.mp4",
+    "slides\\files\\Matroides\\2535676517_26570852_4178743022.mp4",
+    "slides\\files\\Matroides\\2535676517_3737962567_364070696.mp4",
+    "slides\\files\\Matroides\\2535676517_2437510979_821360048.mp4",
+    "slides\\files\\Matroides\\2535676517_2054679890_1070983157.mp4",
+    "slides\\files\\Matroides\\2535676517_3558190000_3600462195.mp4",
+    "slides\\files\\Matroides\\2535676517_2265152242_3652830471.mp4",
+    "slides\\files\\Matroides\\2535676517_3769095482_1929752087.mp4",
+    "slides\\files\\Matroides\\2535676517_3837031164_172383579.mp4",
+    "slides\\files\\Matroides\\2535676517_3715414034_448828668.mp4",
+    "slides\\files\\Matroides\\2535676517_3534971416_3334118722.mp4",
+    "slides\\files\\Matroides\\2535676517_3555801908_590760848.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

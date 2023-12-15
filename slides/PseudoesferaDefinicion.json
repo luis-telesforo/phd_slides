@@ -1,0 +1,66 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 3,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 3,
+      "end_animation": 5,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 8,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 8,
+      "end_animation": 10,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 10,
+      "end_animation": 12,
+      "number": 6
+    },
+    {
+      "type": "last",
+      "start_animation": 12,
+      "end_animation": 13,
+      "number": 7
+    }
+  ],
+  "files": [
+    "slides\\files\\PseudoesferaDefinicion\\2578476628_2785765176_4043547877.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_42071439_2480927999.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_526270962_54254739.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_1029042932_1237400131.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_2287857672_272242334.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_1564209774_2476110898.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_353024662_2480927999.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_3161405868_3206619476.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_3423620826_1237400131.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_3321398143_3271484004.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_345389474_3435972786.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_3253121438_2662321672.mp4",
+    "slides\\files\\PseudoesferaDefinicion\\2535676517_2785723869_3634446012.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2578476628_1106303334_683025301.mp4'
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2535676517_1194599820_51277117.mp4'
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2535676517_1249661534_683025301.mp4'
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2535676517_2912654817_51277117.mp4'
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2535676517_1437355192_683025301.mp4'
+file 'file:C:/Users/luis_/Documents/GitHub/psi/slides/media/videos/main/480p15/partial_movie_files/SimplicialComplexes/2535676517_1266890282_51277117.mp4'

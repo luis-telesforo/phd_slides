@@ -1,0 +1,99 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 3,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 3,
+      "end_animation": 4,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 4,
+      "end_animation": 5,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 6,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 6,
+      "end_animation": 7,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 7,
+      "end_animation": 9,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 9,
+      "end_animation": 10,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 10,
+      "end_animation": 12,
+      "number": 9
+    },
+    {
+      "type": "slide",
+      "start_animation": 12,
+      "end_animation": 13,
+      "number": 10
+    },
+    {
+      "type": "slide",
+      "start_animation": 13,
+      "end_animation": 15,
+      "number": 11
+    },
+    {
+      "type": "last",
+      "start_animation": 15,
+      "end_animation": 16,
+      "number": 12
+    }
+  ],
+  "files": [
+    "slides\\files\\Portadores\\2578476628_91220041_223132457.mp4",
+    "slides\\files\\Portadores\\2535676517_3994000099_359913990.mp4",
+    "slides\\files\\Portadores\\2535676517_1766171014_223132457.mp4",
+    "slides\\files\\Portadores\\2535676517_2229934048_537265177.mp4",
+    "slides\\files\\Portadores\\2535676517_1196875840_3245722664.mp4",
+    "slides\\files\\Portadores\\2535676517_4276823549_1884135888.mp4",
+    "slides\\files\\Portadores\\2535676517_1160249688_3838893331.mp4",
+    "slides\\files\\Portadores\\2535676517_1060756249_1843874783.mp4",
+    "slides\\files\\Portadores\\2535676517_3584355259_537265177.mp4",
+    "slides\\files\\Portadores\\2535676517_2090189744_2826582069.mp4",
+    "slides\\files\\Portadores\\2535676517_3520685056_697264234.mp4",
+    "slides\\files\\Portadores\\2535676517_2397713039_537265177.mp4",
+    "slides\\files\\Portadores\\2535676517_2604007170_3625275473.mp4",
+    "slides\\files\\Portadores\\2535676517_177343975_3043711461.mp4",
+    "slides\\files\\Portadores\\2535676517_3021874886_2520458608.mp4",
+    "slides\\files\\Portadores\\2535676517_1758070717_1776252361.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

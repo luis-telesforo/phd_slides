@@ -1,0 +1,53 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 2,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 2,
+      "end_animation": 3,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 3,
+      "end_animation": 4,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 4,
+      "end_animation": 5,
+      "number": 5
+    },
+    {
+      "type": "last",
+      "start_animation": 5,
+      "end_animation": 6,
+      "number": 6
+    }
+  ],
+  "files": [
+    "slides\\files\\SimplicialComplexes\\2578476628_1106303334_683025301.mp4",
+    "slides\\files\\SimplicialComplexes\\2535676517_1194599820_51277117.mp4",
+    "slides\\files\\SimplicialComplexes\\2535676517_1249661534_683025301.mp4",
+    "slides\\files\\SimplicialComplexes\\2535676517_2912654817_51277117.mp4",
+    "slides\\files\\SimplicialComplexes\\2535676517_1437355192_683025301.mp4",
+    "slides\\files\\SimplicialComplexes\\2535676517_1266890282_51277117.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}

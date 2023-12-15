@@ -1,0 +1,106 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 2,
+      "number": 2
+    },
+    {
+      "type": "slide",
+      "start_animation": 2,
+      "end_animation": 3,
+      "number": 3
+    },
+    {
+      "type": "slide",
+      "start_animation": 3,
+      "end_animation": 5,
+      "number": 4
+    },
+    {
+      "type": "slide",
+      "start_animation": 5,
+      "end_animation": 7,
+      "number": 5
+    },
+    {
+      "type": "slide",
+      "start_animation": 7,
+      "end_animation": 8,
+      "number": 6
+    },
+    {
+      "type": "slide",
+      "start_animation": 8,
+      "end_animation": 9,
+      "number": 7
+    },
+    {
+      "type": "slide",
+      "start_animation": 9,
+      "end_animation": 10,
+      "number": 8
+    },
+    {
+      "type": "slide",
+      "start_animation": 10,
+      "end_animation": 11,
+      "number": 9
+    },
+    {
+      "type": "slide",
+      "start_animation": 11,
+      "end_animation": 14,
+      "number": 10
+    },
+    {
+      "type": "slide",
+      "start_animation": 14,
+      "end_animation": 15,
+      "number": 11
+    },
+    {
+      "type": "slide",
+      "start_animation": 15,
+      "end_animation": 16,
+      "number": 12
+    },
+    {
+      "type": "last",
+      "start_animation": 16,
+      "end_animation": 17,
+      "number": 13
+    }
+  ],
+  "files": [
+    "slides\\files\\BorsukUlam\\2578476628_773750605_223132457.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3156057955_133582507.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3020649475_1609427343.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_79845420_33873905.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3161963691_223132457.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_2732457743_76278094.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3296716990_359913990.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_2732674455_85245201.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_242023927_4161432151.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_2342784226_8281560.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_1359053418_3405786750.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3396828306_2855263608.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_399878204_3482681833.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3387083088_3860898548.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3837296203_643052370.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_613576728_2458645668.mp4",
+    "slides\\files\\BorsukUlam\\2535676517_3868503169_256442699.mp4"
+  ],
+  "resolution": [
+    854,
+    480
+  ],
+  "background_color": "white"
+}
