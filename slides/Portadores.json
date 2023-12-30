@@ -1,99 +1,81 @@
 {
   "slides": [
     {
-      "type": "slide",
-      "start_animation": 0,
-      "end_animation": 1,
-      "number": 1
+      "file": "slides\\files\\Portadores\\9261b4ff75010ede775d7426704a6ab4a5b6cb2841c031663641a350d54003f2.mp4",
+      "rev_file": "slides\\files\\Portadores\\9261b4ff75010ede775d7426704a6ab4a5b6cb2841c031663641a350d54003f2_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 1,
-      "end_animation": 3,
-      "number": 2
+      "file": "slides\\files\\Portadores\\1516a9ce34d5b3611970ffbe56b560311f6715e57f62a2166222327aa3da046a.mp4",
+      "rev_file": "slides\\files\\Portadores\\1516a9ce34d5b3611970ffbe56b560311f6715e57f62a2166222327aa3da046a_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 3,
-      "end_animation": 4,
-      "number": 3
+      "file": "slides\\files\\Portadores\\250016cbb30f6e1c59715c2efaa604c76baa89cd520cfee0b11367d4327e21e1.mp4",
+      "rev_file": "slides\\files\\Portadores\\250016cbb30f6e1c59715c2efaa604c76baa89cd520cfee0b11367d4327e21e1_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 4,
-      "end_animation": 5,
-      "number": 4
+      "file": "slides\\files\\Portadores\\6be6c78c90e74c0fa4264465c4fed0d6f5428a5f04c98f5b442edf45c2e164bb.mp4",
+      "rev_file": "slides\\files\\Portadores\\6be6c78c90e74c0fa4264465c4fed0d6f5428a5f04c98f5b442edf45c2e164bb_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 5,
-      "end_animation": 6,
-      "number": 5
+      "file": "slides\\files\\Portadores\\b4a3d96b95e5902c810b4685f709e825abc75f7dcdc4c129168468cba21b1cf2.mp4",
+      "rev_file": "slides\\files\\Portadores\\b4a3d96b95e5902c810b4685f709e825abc75f7dcdc4c129168468cba21b1cf2_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 6,
-      "end_animation": 7,
-      "number": 6
+      "file": "slides\\files\\Portadores\\549fbf410e8730cda9b4939969904a2e903e84d6ece4dcbe6545b34d685aef52.mp4",
+      "rev_file": "slides\\files\\Portadores\\549fbf410e8730cda9b4939969904a2e903e84d6ece4dcbe6545b34d685aef52_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 7,
-      "end_animation": 9,
-      "number": 7
+      "file": "slides\\files\\Portadores\\8fa176801084e3399c8ca4d82ca027ec5e95d878238376b5c8911682516a4697.mp4",
+      "rev_file": "slides\\files\\Portadores\\8fa176801084e3399c8ca4d82ca027ec5e95d878238376b5c8911682516a4697_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 9,
-      "end_animation": 10,
-      "number": 8
+      "file": "slides\\files\\Portadores\\c6c63df4d45cd359f08d4c465d893eeeee9baf94b3a40379ab1a1b1ba35043bc.mp4",
+      "rev_file": "slides\\files\\Portadores\\c6c63df4d45cd359f08d4c465d893eeeee9baf94b3a40379ab1a1b1ba35043bc_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 10,
-      "end_animation": 12,
-      "number": 9
+      "file": "slides\\files\\Portadores\\e44e75f33d29d13f05e86099f4ba9f4aad709ea6594d2717c6c4dc8e1b14b2e7.mp4",
+      "rev_file": "slides\\files\\Portadores\\e44e75f33d29d13f05e86099f4ba9f4aad709ea6594d2717c6c4dc8e1b14b2e7_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 12,
-      "end_animation": 13,
-      "number": 10
+      "file": "slides\\files\\Portadores\\8ae1ab0a2b225c0af52fc2551384fc09493c7258eeae1baa52a4465c9eaa8a44.mp4",
+      "rev_file": "slides\\files\\Portadores\\8ae1ab0a2b225c0af52fc2551384fc09493c7258eeae1baa52a4465c9eaa8a44_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 13,
-      "end_animation": 15,
-      "number": 11
+      "file": "slides\\files\\Portadores\\bf1c59f002153dc83f472e7be7770a1971599c42e250afe91fd6c6a1542476d7.mp4",
+      "rev_file": "slides\\files\\Portadores\\bf1c59f002153dc83f472e7be7770a1971599c42e250afe91fd6c6a1542476d7_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "last",
-      "start_animation": 15,
-      "end_animation": 16,
-      "number": 12
+      "file": "slides\\files\\Portadores\\a8b5c4621a05201800ffcf6b7d348198c1ef47e05b7afd4f88ec55e744fe18d1.mp4",
+      "rev_file": "slides\\files\\Portadores\\a8b5c4621a05201800ffcf6b7d348198c1ef47e05b7afd4f88ec55e744fe18d1_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     }
   ],
-  "files": [
-    "slides\\files\\Portadores\\2578476628_91220041_223132457.mp4",
-    "slides\\files\\Portadores\\2535676517_3994000099_359913990.mp4",
-    "slides\\files\\Portadores\\2535676517_1766171014_223132457.mp4",
-    "slides\\files\\Portadores\\2535676517_2229934048_537265177.mp4",
-    "slides\\files\\Portadores\\2535676517_1196875840_3245722664.mp4",
-    "slides\\files\\Portadores\\2535676517_4276823549_1884135888.mp4",
-    "slides\\files\\Portadores\\2535676517_1160249688_3838893331.mp4",
-    "slides\\files\\Portadores\\2535676517_1060756249_1843874783.mp4",
-    "slides\\files\\Portadores\\2535676517_3584355259_537265177.mp4",
-    "slides\\files\\Portadores\\2535676517_2090189744_2826582069.mp4",
-    "slides\\files\\Portadores\\2535676517_3520685056_697264234.mp4",
-    "slides\\files\\Portadores\\2535676517_2397713039_537265177.mp4",
-    "slides\\files\\Portadores\\2535676517_2604007170_3625275473.mp4",
-    "slides\\files\\Portadores\\2535676517_177343975_3043711461.mp4",
-    "slides\\files\\Portadores\\2535676517_3021874886_2520458608.mp4",
-    "slides\\files\\Portadores\\2535676517_1758070717_1776252361.mp4"
-  ],
   "resolution": [
-    854,
-    480
+    1920,
+    1080
   ],
   "background_color": "white"
 }

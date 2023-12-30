@@ -30,6 +30,7 @@ VERDOSO = "#0072B2"
 class BlackSlide(Slide):
     def construct(self):
         Text.set_default(color='BLACK')
+        Mobject.set_default(color='BLACK')
 
 
 def fade_text(slide, text):
@@ -288,9 +289,6 @@ def one_side(vertex, lines_set, triangle_set, inside, blues_set, pinks_set):
 
 
 class SimplicialComplexes(BlackSlide):
-    def tiny(self):
-        self.wait(1.0)
-
     def construct(self):
         super().construct()
         self.add(Title("Common language"))
@@ -302,7 +300,6 @@ class SimplicialComplexes(BlackSlide):
                 VGroup(MathTex(r"\Delta\subseteq\mathcal{P}(V)"),
                        Text("closed under contentions", font_size=30)).arrange(RIGHT)).arrange(DOWN))
         fade_text(self, simplicial_complex)
-        self.next_slide()
         simplex = (
             VGroup(
                 VGroup(MathTex(r"\sigma\in\Delta"),
@@ -310,7 +307,6 @@ class SimplicialComplexes(BlackSlide):
                        Text("-simplex", font_size=30)).arrange(RIGHT),
                 VGroup(Text(" if ", font_size=30), MathTex(r"k+1=\#\sigma")).arrange(RIGHT)).arrange(DOWN))
         fade_text(self, simplex)
-        self.next_slide()
         vertex = (
             VGroup(
                 VGroup(
@@ -318,13 +314,23 @@ class SimplicialComplexes(BlackSlide):
                     Text("-simplex", font_size=30)).arrange(RIGHT),
                 VGroup(Text(" is a vertex.", font_size=30))).arrange(DOWN))
         fade_text(self, vertex)
-        self.next_slide()
+        edge = (
+            VGroup(
+                VGroup(
+                    Text(" A ", font_size=30), MathTex(r"1"),
+                    Text("-simplex", font_size=30)).arrange(RIGHT),
+                VGroup(Text(" is an edge.", font_size=30))).arrange(DOWN))
+        fade_text(self, edge)
+        triangle = (
+            VGroup(
+                VGroup(
+                    Text(" A ", font_size=30), MathTex(r"2"),
+                    Text("-simplex", font_size=30)).arrange(RIGHT),
+                VGroup(Text(" is a triangle.", font_size=30))).arrange(DOWN))
+        fade_text(self, triangle)
 
 
 class PseudoesferaDefinicion(BlackSlide):
-    def tiny(self):
-        self.wait(1.0)
-
     def construct(self):
         super().construct()
         # inicio
@@ -378,16 +384,17 @@ class Ejemplos(BlackSlide):
         state_art = VGroup(Text("The knowledge of pseudospheres consisted"),
                            Text("of 3 pages of (Herlihy, M., et.al. 2013)!", t2s={'[23:28]': ITALIC})).arrange(DOWN)
         self.play(Write(state_art))
-        self.start_loop()
-        self.play(Circumscribe(state_art, color=Color(PURPLE)))
-        self.end_loop()
+        self.next_slide(loop=True)
+        self.play(Circumscribe(state_art))
+        self.next_slide(loop=False)
         self.play(Unwrite(state_art))
 
 
 class Matroides(BlackSlide):
     def construct(self):
         super().construct()
-        title = Title("My path begins!")
+        #title = Title("My path begins!")
+        title = Title("My discoveries!")
         self.add(title)
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
@@ -634,7 +641,7 @@ class BorsukUlam(BlackSlide):
         prueba = tk0[2][3:]
         self.play(Transform(prueba, sym))
         self.next_slide()
-        # Definisión original
+        # Definición original
         circle = Circle(radius=2, color=GREY)
         circle.set_z_index(-1)
         p1 = Dot(point=circle.point_at_angle(225 * DEGREES), radius=.2, color=AZUL)

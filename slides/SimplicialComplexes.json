@@ -1,53 +1,57 @@
 {
   "slides": [
     {
-      "type": "slide",
-      "start_animation": 0,
-      "end_animation": 1,
-      "number": 1
+      "file": "slides\\files\\SimplicialComplexes\\32836329387bd7b1ea3840b1bdbe53a61686d1d54961125ea106c1b519734460.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\32836329387bd7b1ea3840b1bdbe53a61686d1d54961125ea106c1b519734460_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 1,
-      "end_animation": 2,
-      "number": 2
+      "file": "slides\\files\\SimplicialComplexes\\b4cb535fb575698b8d1f98c6351afcb42c3c449ee3855b24f4322ac253fa0735.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\b4cb535fb575698b8d1f98c6351afcb42c3c449ee3855b24f4322ac253fa0735_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 2,
-      "end_animation": 3,
-      "number": 3
+      "file": "slides\\files\\SimplicialComplexes\\c2e01f3b91676220dca56cc51fef90fc85b46ae4ec8533935395203a54265d3c.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\c2e01f3b91676220dca56cc51fef90fc85b46ae4ec8533935395203a54265d3c_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 3,
-      "end_animation": 4,
-      "number": 4
+      "file": "slides\\files\\SimplicialComplexes\\9046f81ee134144265171b846605fa0ca2a93edbbc317f24e0a37b94d2d93d59.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\9046f81ee134144265171b846605fa0ca2a93edbbc317f24e0a37b94d2d93d59_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "slide",
-      "start_animation": 4,
-      "end_animation": 5,
-      "number": 5
+      "file": "slides\\files\\SimplicialComplexes\\89eb0cceda219ab82252dcd1d1dcb014012e6867c73b3a252d85be266006dcde.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\89eb0cceda219ab82252dcd1d1dcb014012e6867c73b3a252d85be266006dcde_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     },
     {
-      "type": "last",
-      "start_animation": 5,
-      "end_animation": 6,
-      "number": 6
+      "file": "slides\\files\\SimplicialComplexes\\da6ed59c8a6827cff22cdfbe53847c1ecec7a4dcb1690acb217b337982126520.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\da6ed59c8a6827cff22cdfbe53847c1ecec7a4dcb1690acb217b337982126520_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\SimplicialComplexes\\fad5b7d1651d34792f1bcf5b8a2d7298497a6174fd3d4a150a16664595bd9d60.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\fad5b7d1651d34792f1bcf5b8a2d7298497a6174fd3d4a150a16664595bd9d60_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\SimplicialComplexes\\9faacc11a14f19cd896338d86cafd6b14b04f1a0f67c6dd83a92228510f99008.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\9faacc11a14f19cd896338d86cafd6b14b04f1a0f67c6dd83a92228510f99008_reversed.mp4",
+      "loop": false,
+      "auto_next": false
     }
   ],
-  "files": [
-    "slides\\files\\SimplicialComplexes\\2578476628_1106303334_683025301.mp4",
-    "slides\\files\\SimplicialComplexes\\2535676517_1194599820_51277117.mp4",
-    "slides\\files\\SimplicialComplexes\\2535676517_1249661534_683025301.mp4",
-    "slides\\files\\SimplicialComplexes\\2535676517_2912654817_51277117.mp4",
-    "slides\\files\\SimplicialComplexes\\2535676517_1437355192_683025301.mp4",
-    "slides\\files\\SimplicialComplexes\\2535676517_1266890282_51277117.mp4"
-  ],
   "resolution": [
-    854,
-    480
+    1920,
+    1080
   ],
   "background_color": "white"
 }
