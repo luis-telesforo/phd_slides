@@ -42,9 +42,9 @@ def fade_text(slide, text):
 def examples_pseudospheres(slide, indicate):
     # EJEMPLO K_3_4
     # k_3
-    k_3_green = (r"\begin{tikzpicture}\foreach\t in {1,2,3,4}{\node (\t) at  (1,\t) {};}\foreach \t/\l in {1/A,"
-                 r"2/B,3/C}{\node (\l) at  (4,\t+.5) [zero] {};}\end{tikzpicture}")
-    k_3 = SingleStringMathTex(k_3_green, tex_template=my_template, stroke_width=3, fill_opacity=1,
+    k_3_blue = (r"\begin{tikzpicture}\foreach\t in {1,2,3,4}{\node (\t) at  (1,\t) {};}\foreach \t/\l in {1/A,"
+                r"2/B,3/C}{\node (\l) at  (4,\t+.5) [zero] {};}\end{tikzpicture}")
+    k_3 = SingleStringMathTex(k_3_blue, tex_template=my_template, stroke_width=3, fill_opacity=1,
                               should_center=True, color=AZUL)
     slide.play(Write(k_3.shift(RIGHT * 2.1)))
     slide.next_slide()
@@ -66,18 +66,24 @@ def examples_pseudospheres(slide, indicate):
     slide.play(FadeOut(k_3_4), FadeOut(k_3), FadeOut(k_4))
     # EJMPLO K_2_2_3
     # lineas
-    k_2_2_3_lineas = (r"\begin{tikzpicture}[scale=3]\node (1) at (2,3) {};\node [white] (a) at (2.5,3.2) {};\node ("
-                      r"x) at (1,3) {};\node (0) at (2.2,2.5)  {};	\node [white] (b) at (1.5,2)  {};	\node (y) "
-                      r"at (2.1,2.7)  {};	\node (z) at (3,2)  {};	\draw[opacity=0.2](x)--(b);	\draw[dotted]("
-                      r"0)--(x);	\draw[opacity=0.2](x)--(a);	\draw[dotted](a) -- (0);    \draw (1)-- (a)--("
-                      r"x)--(1);	\draw (1) -- (b)--(x)--(1);	\draw(1)-- (a)--(z)--(1);	\draw(1) -- (b)--("
-                      r"z)--(1);	\draw[opacity=0.2](z)--(b);	\draw [dotted](0)--(z);	\draw [dotted](b) -- ("
-                      r"0);	\draw[dotted](y)-- (a);		\draw[dotted](y)-- (1);	\draw[dotted](y)-- (0);	\draw["
-                      r"dotted](y)-- (b);	\end{tikzpicture}")
-    lines = SingleStringMathTex(k_2_2_3_lineas, tex_template=my_template, stroke_width=3, fill_opacity=1,
+    k_2_2_3_lineas_1 = (r"\begin{tikzpicture}[scale=3]\node (1) at (2,3) {};\node [white] (a) at (2.5,3.2) {};\node ("
+                        r"x) at (1,3) {};\node (0) at (2.2,2.5)  {};	\node [white] (b) at (1.5,2)  {};	\node (y) "
+                        r"at (2.1,2.7)  {};	\node (z) at (3,2)  {};	\draw[dotted](a) -- (0); \draw [dotted](b) -- ("
+                        r"0);	\draw[dotted](1)-- (a);		\draw[dotted](b)-- (1);	\end{tikzpicture}")
+    k_2_2_3_lineas_2 = (r"\begin{tikzpicture}[scale=3]\node (1) at (2,3) {};\node [white] (a) at (2.5,3.2) {};\node ("
+                        r"x) at (1,3) {};\node (0) at (2.2,2.5)  {};	\node [white] (b) at (1.5,2)  {};	\node (y) "
+                        r"at (2.1,2.7)  {};	\node (z) at (3,2)  {};	\draw[opacity=0.2](x)--(b);	\draw[dotted]("
+                        r"0)--(x);	\draw[opacity=0.2](x)--(a);	\draw ("
+                        r"x)--(1);	\draw (x)--(1);	\draw (z)--(1);	\draw ("
+                        r"z)--(a);	\draw[opacity=0.2](z)--(b);	\draw [dotted](0)--(z);	\draw[dotted](y)-- (a);"
+                        r"\draw[dotted](y)-- (1);	\draw[dotted](y)-- (0);	\draw["
+                        r"dotted](y)-- (b);	\end{tikzpicture}")
+    lines = SingleStringMathTex(k_2_2_3_lineas_1, tex_template=my_template, stroke_width=3, fill_opacity=1,
                                 should_center=True, color=GREY)
     lines.set_z_index(-1)
-    lines_r = lines.copy()
+    lines2 = SingleStringMathTex(k_2_2_3_lineas_2, tex_template=my_template, stroke_width=3, fill_opacity=1,
+                                should_center=True, color=GREY)
+    lines2.set_z_index(-1)
     # triangulos
     triangle1_tex = (r"\begin{tikzpicture}[scale=3]\node (1) at (2,3) {};\node [white] (a) at (2.5,3.2) {};\node ("
                      r"x) at (1,3) {};	\node (0) at (2.2,2.5)  {};	\node [white] (b) at (1.5,2)  {};	\node (y) "
@@ -162,6 +168,8 @@ def examples_pseudospheres(slide, indicate):
     slide.next_slide()
     slide.play(Write(lines.set_opacity(1).set_fill(opacity=0)))
     slide.next_slide()
+    slide.play(Write(lines2.set_opacity(1).set_fill(opacity=0)))
+    slide.next_slide()
     if indicate:
         slide.play(Indicate(triangle1.set_opacity(0).set_fill(opacity=.5), color=YELLOW))
         slide.next_slide()
@@ -186,6 +194,7 @@ def examples_pseudospheres(slide, indicate):
                Unwrite(twoy),
                Unwrite(twoxz),
                Unwrite(lines),
+               Unwrite(lines2),
                Unwrite(triangle1),
                Unwrite(triangle2),
                Unwrite(triangle3),
@@ -393,8 +402,8 @@ class Ejemplos(BlackSlide):
 class Matroides(BlackSlide):
     def construct(self):
         super().construct()
-        #title = Title("My path begins!")
-        title = Title("My discoveries!")
+        # title = Title("My path begins!")
+        title = Title("The first discovery")
         self.add(title)
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
@@ -461,8 +470,8 @@ class Matroides(BlackSlide):
 class PosetChrom(BlackSlide):
     def construct(self):
         super().construct()
-        title = Text("Which matroids are pseudospheres?")
-        fade_text(self, title)
+        title = Title("Which matroids are pseudospheres?")
+        self.add(title)
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
         subset = VGroup(pseudospheres, fam_pseudospheres).scale(.4)
@@ -537,6 +546,8 @@ class PosetChrom(BlackSlide):
 class Join(BlackSlide):
     def construct(self):
         super().construct()
+        title = Title("The last characterization")
+        self.add(title)
         # join
         ensamble1 = Text("Join ", font_size=30)
         ensamble2 = MathTex(r"\Delta\ast\Gamma=\{\sigma\cup\tau\mid\sigma\in\Delta,\tau\in\Gamma\}")
@@ -554,6 +565,8 @@ class Join(BlackSlide):
 class GEspacios(BlackSlide):
     def construct(self):
         super().construct()
+        title = Title("Groups acting on pseudospheres")
+        self.add(title)
         g_0 = VGroup(MathTex("G:"), Text(" a finite discrete group.", font_size=30)).arrange(RIGHT)
         g_ast = VGroup(MathTex(r"\underbrace{G\ast \cdots\ast G}_{n+1}"),
                        Text(" is a pseudosphere.", font_size=30)).arrange(RIGHT)
@@ -591,6 +604,8 @@ class GEspacios(BlackSlide):
 class BorsukUlam(BlackSlide):
     def construct(self):
         super().construct()
+        title = Title("Borsuk-Ulam theorem is a theorem about pseudospheres")
+        self.add(title)
         # Borsuk-Ulam
         bu = Text("Borsuk-Ulam")
         bu0 = Text("There is no continuous function ", font_size=30)
@@ -703,6 +718,8 @@ class BorsukUlam(BlackSlide):
 class Generaliza(BlackSlide):
     def construct(self):
         super().construct()
+        title = Title("Tucker's lemma too!")
+        self.add(title)
         gsym = VGroup(MathTex(r"G-", font_size=40),
                       Text("symmetric subdivisions ", font_size=40)).arrange(RIGHT)
         self.play(Write(gsym.shift(UP * 3)))
@@ -806,6 +823,8 @@ class Generaliza(BlackSlide):
 class Portadores(BlackSlide):
     def construct(self):
         super().construct()
+        title = Title("We are almost ready for applications")
+        self.add(title)
         # mapas portadores
         carrier = VGroup(
             VGroup(Text("A carrier map sends, monotonously, each simplex in", font_size=30),
@@ -916,6 +935,8 @@ class Portadores(BlackSlide):
 class DC(Slide):
     def construct(self):
         super().construct()
+        title = Title("An abstract theorem about distributed computing")
+        self.add(title)
         I = MathTex(r"I").move_to(UL + LEFT)
         SO = (MathTex(r"SO", substrings_to_isolate="S")
               .move_to(UR + RIGHT)
