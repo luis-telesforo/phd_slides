@@ -82,7 +82,7 @@ def examples_pseudospheres(slide, indicate):
                                 should_center=True, color=GREY)
     lines.set_z_index(-1)
     lines2 = SingleStringMathTex(k_2_2_3_lineas_2, tex_template=my_template, stroke_width=3, fill_opacity=1,
-                                should_center=True, color=GREY)
+                                 should_center=True, color=GREY)
     lines2.set_z_index(-1)
     # triangulos
     triangle1_tex = (r"\begin{tikzpicture}[scale=3]\node (1) at (2,3) {};\node [white] (a) at (2.5,3.2) {};\node ("
@@ -300,7 +300,8 @@ def one_side(vertex, lines_set, triangle_set, inside, blues_set, pinks_set):
 class SimplicialComplexes(BlackSlide):
     def construct(self):
         super().construct()
-        self.add(Title("Common language"))
+        title = Title("Common language")
+        self.play(Create(title))
         simplicial_complex = (
             VGroup(
                 VGroup(Text("A simplicial complex over ", font_size=30),
@@ -309,34 +310,75 @@ class SimplicialComplexes(BlackSlide):
                 VGroup(MathTex(r"\Delta\subseteq\mathcal{P}(V)"),
                        Text("closed under contentions", font_size=30)).arrange(RIGHT)).arrange(DOWN))
         fade_text(self, simplicial_complex)
-        simplex = (
-            VGroup(
-                VGroup(MathTex(r"\sigma\in\Delta"),
-                       Text(" is a ", font_size=30), MathTex(r"k"),
-                       Text("-simplex", font_size=30)).arrange(RIGHT),
-                VGroup(Text(" if ", font_size=30), MathTex(r"k+1=\#\sigma")).arrange(RIGHT)).arrange(DOWN))
-        fade_text(self, simplex)
-        vertex = (
-            VGroup(
-                VGroup(
-                    Text(" A ", font_size=30), MathTex(r"0"),
-                    Text("-simplex", font_size=30)).arrange(RIGHT),
-                VGroup(Text(" is a vertex.", font_size=30))).arrange(DOWN))
-        fade_text(self, vertex)
-        edge = (
-            VGroup(
-                VGroup(
-                    Text(" A ", font_size=30), MathTex(r"1"),
-                    Text("-simplex", font_size=30)).arrange(RIGHT),
-                VGroup(Text(" is an edge.", font_size=30))).arrange(DOWN))
-        fade_text(self, edge)
-        triangle = (
-            VGroup(
-                VGroup(
-                    Text(" A ", font_size=30), MathTex(r"2"),
-                    Text("-simplex", font_size=30)).arrange(RIGHT),
-                VGroup(Text(" is a triangle.", font_size=30))).arrange(DOWN))
-        fade_text(self, triangle)
+        # simplex = (
+        #     VGroup(
+        #         VGroup(MathTex(r"\sigma\in\Delta"),
+        #                Text(" is a ", font_size=30), MathTex(r"k"),
+        #                Text("-simplex", font_size=30)).arrange(RIGHT),
+        #         VGroup(Text(" if ", font_size=30), MathTex(r"k+1=\#\sigma")).arrange(RIGHT)).arrange(DOWN))
+        # fade_text(self, simplex)
+        vertex_text = Text(" A vertex.", font_size=30)
+        vertex_pic = Dot(radius=.1, color=BLACK).set_z_index(1)
+        vertex_tex = VGroup(MathTex(r"\{"), vertex_pic.copy(), MathTex(r"\}")).arrange(RIGHT)
+        vertex = VGroup(vertex_text, vertex_pic, vertex_tex).arrange(DOWN, buff=1.9)
+        self.play(Write(vertex))
+        self.next_slide()
+        edge_text = Text(" An edge.", font_size=30)
+        vertex_pic_2 = Dot(radius=.1, color=ROSA).set_z_index(1)
+        edge_tex = VGroup(MathTex(r"\{"),
+                          vertex_pic.copy(),
+                          MathTex(r","),
+                          vertex_pic_2.copy(),
+                          MathTex(r"\}")).arrange(RIGHT)
+        VGroup(edge_text,
+               vertex_pic_2,
+               edge_tex).arrange(DOWN, buff=1.9)
+        edge_pic = Line(vertex_pic.get_center() + LEFT, vertex_pic_2.get_center() + RIGHT,
+                        color=GREY)
+        self.play(TransformMatchingShapes(vertex_text, edge_text),
+                  TransformMatchingShapes(vertex_tex, edge_tex),
+                  # TransformMatchingTex(vertex_tex[0], edge_tex[0]),
+                  vertex_pic.animate.shift(LEFT),
+                  Write(vertex_pic_2.shift(RIGHT)))
+        self.next_slide()
+        self.play(Create(edge_pic))
+        triangle_text = Text(" A triangle.", font_size=30)
+        vertex_pic_3 = Dot(radius=.1, color=AZUL).set_z_index(1)
+        triangle_tex = VGroup(MathTex(r"\{"),
+                              vertex_pic.copy(),
+                              MathTex(r","),
+                              vertex_pic_2.copy(),
+                              MathTex(r","),
+                              vertex_pic_3.copy(),
+                              MathTex(r"\}")).arrange(RIGHT)
+        VGroup(triangle_text,
+               vertex_pic_3,
+               triangle_tex).arrange(DOWN, buff=1.9)
+        # edge_pic_2 = Line(vertex_pic.get_center(), vertex_pic_3.get_center() + UP*1.5,
+        #                 color=GREY)
+        # edge_pic_3 = Line(vertex_pic_2.get_center(), vertex_pic_3.get_center() + UP*1.5,
+        #                 color=GREY)
+        triangle_pic = Polygon(vertex_pic.get_center(),
+                               vertex_pic_2.get_center(),
+                               vertex_pic_3.get_center()+UP*1.5,
+                               z_index=0,
+                               color=GREY,
+                               fill_color=GREY,
+                               fill_opacity=1)
+        triangle = VGroup(triangle_pic)
+        self.next_slide()
+        self.play(TransformMatchingShapes(edge_text, triangle_text),
+                  TransformMatchingShapes(edge_tex, triangle_tex),
+                  # Write(edge_pic_2),
+                  # Write(edge_pic_3),
+                  Write(vertex_pic_3.shift(UP*1.5)),
+                  Create(triangle))
+        self.next_slide()
+        all_mobjects = VGroup()
+        var = self.mobjects
+        for x in var:
+            all_mobjects.add(x)
+        self.play(Uncreate(all_mobjects))
 
 
 class PseudoesferaDefinicion(BlackSlide):
@@ -344,7 +386,7 @@ class PseudoesferaDefinicion(BlackSlide):
         super().construct()
         # inicio
         question = Title("What is a pseudosphere?")
-        self.add(question)
+        self.play(Create(question))
         # definicion pseudoesfera
         V = VGroup(MathTex(r"V_{p}:"),
                    Text(" finite for each", font_size=30),

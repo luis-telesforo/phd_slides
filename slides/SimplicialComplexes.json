@@ -1,50 +1,38 @@
 {
   "slides": [
     {
-      "file": "slides\\files\\SimplicialComplexes\\32836329387bd7b1ea3840b1bdbe53a61686d1d54961125ea106c1b519734460.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\32836329387bd7b1ea3840b1bdbe53a61686d1d54961125ea106c1b519734460_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\d97c8529a3c2f7d5423061edb104dd9b9b49fe724586db5924018b5a4caedf15.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\d97c8529a3c2f7d5423061edb104dd9b9b49fe724586db5924018b5a4caedf15_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\b4cb535fb575698b8d1f98c6351afcb42c3c449ee3855b24f4322ac253fa0735.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\b4cb535fb575698b8d1f98c6351afcb42c3c449ee3855b24f4322ac253fa0735_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\dfd9f0d5221a51896b1ec267c027345099e9301092427a928bf5951909b236b0.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\dfd9f0d5221a51896b1ec267c027345099e9301092427a928bf5951909b236b0_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\c2e01f3b91676220dca56cc51fef90fc85b46ae4ec8533935395203a54265d3c.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\c2e01f3b91676220dca56cc51fef90fc85b46ae4ec8533935395203a54265d3c_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\5a60bcf3842654e00cca21f8fb75a30f9f3cbd2c4f5b3869afa226fef8b50ace.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\5a60bcf3842654e00cca21f8fb75a30f9f3cbd2c4f5b3869afa226fef8b50ace_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\9046f81ee134144265171b846605fa0ca2a93edbbc317f24e0a37b94d2d93d59.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\9046f81ee134144265171b846605fa0ca2a93edbbc317f24e0a37b94d2d93d59_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\e0a26fd8e4909a7c1052da2e88bc77dafb9196b020629adeaefde7255be3edab.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\e0a26fd8e4909a7c1052da2e88bc77dafb9196b020629adeaefde7255be3edab_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\89eb0cceda219ab82252dcd1d1dcb014012e6867c73b3a252d85be266006dcde.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\89eb0cceda219ab82252dcd1d1dcb014012e6867c73b3a252d85be266006dcde_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\0d17ebaa62b52ecedbd17a1fc99fa5e761b62884924ee128c865e15cfd75a27d.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\0d17ebaa62b52ecedbd17a1fc99fa5e761b62884924ee128c865e15cfd75a27d_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\da6ed59c8a6827cff22cdfbe53847c1ecec7a4dcb1690acb217b337982126520.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\da6ed59c8a6827cff22cdfbe53847c1ecec7a4dcb1690acb217b337982126520_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\SimplicialComplexes\\fad5b7d1651d34792f1bcf5b8a2d7298497a6174fd3d4a150a16664595bd9d60.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\fad5b7d1651d34792f1bcf5b8a2d7298497a6174fd3d4a150a16664595bd9d60_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\SimplicialComplexes\\9faacc11a14f19cd896338d86cafd6b14b04f1a0f67c6dd83a92228510f99008.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\9faacc11a14f19cd896338d86cafd6b14b04f1a0f67c6dd83a92228510f99008_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\268bf4c04f9de5c781d1107a4e29f18184f4aad057e3b6dd11c3a2d45dcdd3bf.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\268bf4c04f9de5c781d1107a4e29f18184f4aad057e3b6dd11c3a2d45dcdd3bf_reversed.mp4",
       "loop": false,
       "auto_next": false
     }
