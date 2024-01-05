@@ -302,6 +302,7 @@ class SimplicialComplexes(BlackSlide):
         super().construct()
         title = Title("Common language")
         self.play(Create(title))
+        self.next_slide()
         simplicial_complex = (
             VGroup(
                 VGroup(Text("A simplicial complex over ", font_size=30),
@@ -342,6 +343,7 @@ class SimplicialComplexes(BlackSlide):
                   Write(vertex_pic_2.shift(RIGHT)))
         self.next_slide()
         self.play(Create(edge_pic))
+        self.next_slide()
         triangle_text = Text(" A triangle.", font_size=30)
         vertex_pic_3 = Dot(radius=.1, color=AZUL).set_z_index(1)
         triangle_tex = VGroup(MathTex(r"\{"),
@@ -361,12 +363,11 @@ class SimplicialComplexes(BlackSlide):
         triangle_pic = Polygon(vertex_pic.get_center(),
                                vertex_pic_2.get_center(),
                                vertex_pic_3.get_center()+UP*1.5,
-                               z_index=0,
+                               z_index=-1,
                                color=GREY,
                                fill_color=GREY,
                                fill_opacity=1)
         triangle = VGroup(triangle_pic)
-        self.next_slide()
         self.play(TransformMatchingShapes(edge_text, triangle_text),
                   TransformMatchingShapes(edge_tex, triangle_tex),
                   # Write(edge_pic_2),
@@ -374,11 +375,8 @@ class SimplicialComplexes(BlackSlide):
                   Write(vertex_pic_3.shift(UP*1.5)),
                   Create(triangle))
         self.next_slide()
-        all_mobjects = VGroup()
-        var = self.mobjects
-        for x in var:
-            all_mobjects.add(x)
-        self.play(Uncreate(all_mobjects))
+        all_mobjects = VGroup(*self.mobjects)
+        self.play(Uncreate(all_mobjects))#, Uncreate(triangle_tex[-1]))
 
 
 class PseudoesferaDefinicion(BlackSlide):
@@ -387,6 +385,7 @@ class PseudoesferaDefinicion(BlackSlide):
         # inicio
         question = Title("What is a pseudosphere?")
         self.play(Create(question))
+        self.next_slide()
         # definicion pseudoesfera
         V = VGroup(MathTex(r"V_{p}:"),
                    Text(" finite for each", font_size=30),
@@ -425,7 +424,7 @@ class Ejemplos(BlackSlide):
     def construct(self):
         super().construct()
         examples = Title("Some examples")
-        self.add(examples)
+        self.play(Create(examples))
         examples_pseudospheres(self, True)
         ready = Text("Ready to study applications...")
         fade_text(self, ready)
