@@ -661,7 +661,7 @@ class GEspacios(BlackSlide):
 class BorsukUlam(BlackSlide):
     def construct(self):
         super().construct()
-        title = Title("Borsuk-Ulam theorem is a theorem about pseudospheres")
+        title = Title("The Borsuk-Ulam theorem is a theorem about pseudospheres")
         self.play(Create(title))
         self.next_slide()
         # Borsuk-Ulam
@@ -703,7 +703,9 @@ class BorsukUlam(BlackSlide):
                      Text(", there is no simplicial map ", font_size=30)).arrange(RIGHT)
         tk2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(\mathbb{Z}_{2})").arrange(RIGHT)
         tk3 = VGroup(Text("preserving the action of ", font_size=30),
-                     MathTex(r"\mathbb{Z}_{2}")).arrange(RIGHT)
+                     MathTex(r"\mathbb{Z}_{2}"),
+                     Text("on the boundary of ", font_size=30),
+                     MathTex(r"B^{n}")).arrange(RIGHT)
         tucker = VGroup(tk, tk0, tk1, tk2, tk3).arrange(DOWN)
         self.play(Write(tucker))
         self.next_slide()
@@ -821,12 +823,16 @@ class Generaliza(BlackSlide):
                      Text(", there is no simplicial map ", font_size=30)).arrange(RIGHT, buff=1.2)
         tk2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(\mathbb{Z}_{2})").arrange(RIGHT)
         tk3 = VGroup(Text(" preserving the action of ",
-                          font_size=30), MathTex(r"\mathbb{Z}_{2}")).arrange(RIGHT)
+                          font_size=30), MathTex(r"\mathbb{Z}_{2}"),
+                     VGroup(Text("on the boundary of ", font_size=30),
+                     MathTex(r"B^{n}")).arrange(RIGHT, buff = 1.2)).arrange(RIGHT)
         tucker = VGroup(tk0, tk1, tk2, tk3).arrange(DOWN)
         tk1_cone = MathTex(r"S^{n-1}\ast x").move_to(tk1[1])
+        tk1_cone_2 = tk1_cone.copy()
+        tk1_cone_2 = tk1_cone_2.move_to(tk3[-1][-1])
         self.play(Write(tucker))
         self.next_slide()
-        self.play(Transform(tk1[1], tk1_cone))
+        self.play(Transform(tk1[1], tk1_cone),Transform(tk3[-1][-1], tk1_cone_2))
         self.next_slide()
         # luis alberto
         # la = Text("Luis Alberto").move_to(tk)
@@ -838,7 +844,8 @@ class Generaliza(BlackSlide):
                      Text(r", there is no simplicial map ", font_size=30)).arrange(RIGHT).move_to(tk1)
         la2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(G)").arrange(RIGHT).move_to(tk2)
         la3 = VGroup(Text("preserving the action of ", font_size=30),
-                     MathTex(r"G")).arrange(RIGHT).move_to(tk3)
+                     MathTex(r"G"), Text("on ", font_size=30),
+                     MathTex(r"\Psi_{n-1}(G)")).arrange(RIGHT).move_to(tk3)
         self.play(TransformMatchingShapes(tk0, la0),
                   TransformMatchingShapes(tk1[1], la1[1]),
                   TransformMatchingShapes(tk2, la2),
@@ -885,14 +892,22 @@ class Portadores(BlackSlide):
         title = Title("We are almost ready for applications")
         self.play(Create(title))
         self.next_slide()
-        self.play(Uncreate(title))
         # mapas portadores
         carrier = VGroup(
             VGroup(Text("A carrier map sends, monotonously, each simplex in", font_size=30),
                    MathTex(r"I")).arrange(RIGHT),
             VGroup(Text("to a subcomplex of", font_size=30),
                    MathTex(r"O")).arrange(RIGHT)).arrange(DOWN)
-        fade_text(self, carrier)
+        self.play(FadeIn(carrier))
+        self.next_slide()
+        carrier_2 = VGroup(
+            VGroup(Text("A carrier map is an order preserving function from", font_size=30),
+                   MathTex(r"I")).arrange(RIGHT),
+            VGroup(Text("into the lattice of subcomplexes of", font_size=30),
+                   MathTex(r"O")).arrange(RIGHT)).arrange(DOWN)
+        self.play(Transform(carrier, carrier_2))
+        self.next_slide()
+        self.play(FadeOut(carrier),Uncreate(title))
         # consenso
         # input
         square_input = Square(side_length=2, color=GREY).shift(LEFT * 4)
@@ -1012,7 +1027,7 @@ class DC(BlackSlide):
         protocol = Arrow(I.get_center(), SP.get_center(), color=BLACK, buff=.5, stroke_width=3)
         protocol_t = LabeledDot(MathTex(r"\mathcal{E}"), point=protocol.get_center() + LEFT * .5)
 
-        decision = Arrow(SP.get_center(), SO.get_center(), color=BLACK, buff=.5, stroke_width=3)
+        decision = Arrow(SP.get_center(), SO.get_center(), color=AZUL, buff=.5, stroke_width=3)
         decision_t = (MathTex(r"Sd", substrings_to_isolate="S")
                       .move_to(decision.get_center() + RIGHT * .5)
                       .save_state())
@@ -1049,10 +1064,17 @@ class DC(BlackSlide):
         all = VGroup(NewI, SO, NewSP, decision, decision_t, protocol, task, task_t)
         IG = MathTex(r"I").move_to(NewI)
         SPG = MathTex(r"S(\operatorname{Subd}(I))").move_to(NewSP)
-
+        task_t_prime = LabeledDot(MathTex(r"\mathcal{T}'"), point=task.get_center() + UP * .5)
+        I_must_be_G_free = VGroup(MathTex(r"G"), Text(" acts freely on "), MathTex(r"I")).arrange(RIGHT)
+        I_must_be_G_free.scale(.6)
+        I_must_be_G_free.move_to(IG.get_center()+LEFT*2+UP)
+        self.next_slide()
         self.play(AnimationGroup(Transform(I, IG),
                                  Transform(SP, SPG),
+                                 Transform(task_t, task_t_prime),
                                  FadeOut(leq, decision, decision_t)))
+        self.next_slide()
+        fade_text(self, I_must_be_G_free)
         self.next_slide()
         self.play(FadeOut(I, SP, SO, task, protocol, protocol_t, task_t))
         self.next_slide()
@@ -1083,7 +1105,7 @@ class DC(BlackSlide):
         self.next_slide()
         funcion2 = Arrow(start=SPG.get_center(),  # + (LEFT * .5),
                          end=NewSP.get_center(),  # + (RIGHT * .5 + DOWN * .2),
-                         color=BLACK, buff=.5, stroke_width=3)
+                         color=AZUL, buff=.5, stroke_width=3)
         funcion2_t = LabeledDot(MathTex(r"Sf'"), point=funcion2.get_center() + DOWN * .6 + LEFT * .5)
         funcion2_completa = VGroup(funcion2_t, funcion2).scale(.8)
         self.play(Write(funcion2_completa))
