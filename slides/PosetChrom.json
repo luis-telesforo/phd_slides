@@ -1,80 +1,38 @@
 {
   "slides": [
     {
-      "file": "slides\\files\\PosetChrom\\595be2daa42eb8c561984e2e77003d38757c28a4cf461a6b0fc4b051c9b74624.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\595be2daa42eb8c561984e2e77003d38757c28a4cf461a6b0fc4b051c9b74624_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\a51d57a0b7d4faa3acc6e2170a4ddf01ce49e7144009b1e606e65edf89b3b8d6.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\a51d57a0b7d4faa3acc6e2170a4ddf01ce49e7144009b1e606e65edf89b3b8d6_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\PosetChrom\\5b1c110abf89e966613ab0bfbfb1af0eabea1f4b547a5157f7d060c446691854.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\5b1c110abf89e966613ab0bfbfb1af0eabea1f4b547a5157f7d060c446691854_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\43fe4c594b74a9a45b10ed5cf91863f84b90b33574e54a9dea40a9536b8feb39.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\43fe4c594b74a9a45b10ed5cf91863f84b90b33574e54a9dea40a9536b8feb39_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\PosetChrom\\e7f7d61ee722774653b81cc8e2d90c65929b567ede4b2687e66a5d202de81488.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\e7f7d61ee722774653b81cc8e2d90c65929b567ede4b2687e66a5d202de81488_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\236d9faf7136fb6f350b46166a8dd4a352996b4c38eb52c9c5c6ffaaec5b8271.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\236d9faf7136fb6f350b46166a8dd4a352996b4c38eb52c9c5c6ffaaec5b8271_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\PosetChrom\\27090ecce89a978970618ffd4129ab613b495d93b479c44c10f221666b15889f.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\27090ecce89a978970618ffd4129ab613b495d93b479c44c10f221666b15889f_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\ae1a00658cd795d4afed029b3b76e7dbe8e4b0bd641cb4c74c77e17130ab9260.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\ae1a00658cd795d4afed029b3b76e7dbe8e4b0bd641cb4c74c77e17130ab9260_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\PosetChrom\\e1bbaee5c680c8698bfbe5c7a66b9bb0f6d46669e4d3d42d1d7aebd342a1890f.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\e1bbaee5c680c8698bfbe5c7a66b9bb0f6d46669e4d3d42d1d7aebd342a1890f_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\033bb270fb0b8cf73a4c85af8f5eb98ff49dee5f1e599f035d350fd30fde1864.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\033bb270fb0b8cf73a4c85af8f5eb98ff49dee5f1e599f035d350fd30fde1864_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\PosetChrom\\23d3faa20ac81a347e7fa2b3ab4afaf10208d0b5df7d189858937ef11772d29b.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\23d3faa20ac81a347e7fa2b3ab4afaf10208d0b5df7d189858937ef11772d29b_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\2160acc3ab57e22455d94a4c684857a0cebb280a4d6b49c9a8f96308729d2573.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\2160acc3ab57e22455d94a4c684857a0cebb280a4d6b49c9a8f96308729d2573_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\65216acf0ec21848d9590fe469bf65f8302c71ddb1735884cb425ae3882db005.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\65216acf0ec21848d9590fe469bf65f8302c71ddb1735884cb425ae3882db005_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\8d4a17db79bb0521672c45633062c273c1aa4ef2b569c3ca049d6bca036cc65c.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\8d4a17db79bb0521672c45633062c273c1aa4ef2b569c3ca049d6bca036cc65c_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\22fe73e22c974d5e3ee0d039d281265468fdeda0013f8117ec1a058ffecaa7ce.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\22fe73e22c974d5e3ee0d039d281265468fdeda0013f8117ec1a058ffecaa7ce_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\92ede76ab71ee52670d1b2e97c3017eec245c1522e816dec0a25880e6f56a865.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\92ede76ab71ee52670d1b2e97c3017eec245c1522e816dec0a25880e6f56a865_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\b360a4259e94ae21c190e47c5ebcf925112eeb2a48cdb999d7094d676a4767d7.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\b360a4259e94ae21c190e47c5ebcf925112eeb2a48cdb999d7094d676a4767d7_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\PosetChrom\\5640ab97ab2f9838171995aeec0bf21e6702381841eb28ed391a6ac82493aeed.mp4",
-      "rev_file": "slides\\files\\PosetChrom\\5640ab97ab2f9838171995aeec0bf21e6702381841eb28ed391a6ac82493aeed_reversed.mp4",
+      "file": "slides\\files\\PosetChrom\\8c17e6e97f6f44414b7b32b91d31a3316601887fdcd45747dc67856c9640efad.mp4",
+      "rev_file": "slides\\files\\PosetChrom\\8c17e6e97f6f44414b7b32b91d31a3316601887fdcd45747dc67856c9640efad_reversed.mp4",
       "loop": false,
       "auto_next": false
     }

@@ -1,0 +1,15 @@
+{
+  "slides": [
+    {
+      "file": "slides\\files\\Gracias\\603025f8363e1d36d743bed7a95c511fd18383a511cb9e0048e141d3ac88760d.mp4",
+      "rev_file": "slides\\files\\Gracias\\603025f8363e1d36d743bed7a95c511fd18383a511cb9e0048e141d3ac88760d_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "white"
+}
