@@ -1,50 +1,44 @@
 {
   "slides": [
     {
-      "file": "slides\\files\\SimplicialComplexes\\7c1dc0c30e0ce484a40fcb3cf3aa91c680be2f055a74a0318ac9ff98d40b9481.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\7c1dc0c30e0ce484a40fcb3cf3aa91c680be2f055a74a0318ac9ff98d40b9481_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\408083be429eff2440274ef6397704047227c719113bcb8c67cf9c391a19aa55.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\408083be429eff2440274ef6397704047227c719113bcb8c67cf9c391a19aa55_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\46337463788e58de34dd6787632d5cbb2c0e55c839853bf3abb575293c223ec5.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\46337463788e58de34dd6787632d5cbb2c0e55c839853bf3abb575293c223ec5_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\3d3f8c7317c14f085a67520469927bd68e69b0f2482de9d5104a8f2b760914be.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\3d3f8c7317c14f085a67520469927bd68e69b0f2482de9d5104a8f2b760914be_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\c0cf9750737e8f9bb5de158ac8a3f6ca75543cd1603a6098b372f87ac352caa7.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\c0cf9750737e8f9bb5de158ac8a3f6ca75543cd1603a6098b372f87ac352caa7_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\f4ca6d6c589bfa176193d7f830dd3cc478db16b83c8d215cf71181f12678592b.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\f4ca6d6c589bfa176193d7f830dd3cc478db16b83c8d215cf71181f12678592b_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\6c54f81d058e69dc5eea38358093cd52da200289cb1613863889ca643838e08d.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\6c54f81d058e69dc5eea38358093cd52da200289cb1613863889ca643838e08d_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\ed5661f8edc31473ad0f651aca792d5564cbeb3a43adc6690fb424a94b5114b0.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\ed5661f8edc31473ad0f651aca792d5564cbeb3a43adc6690fb424a94b5114b0_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\86911abf0d7296df2da7622a667e533c4daa6a99227da1ad27b414e1983381cb.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\86911abf0d7296df2da7622a667e533c4daa6a99227da1ad27b414e1983381cb_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\b0c883368aa4f595749708720074f8094343c885e8fcbf4494587956f8b0d3a7.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\b0c883368aa4f595749708720074f8094343c885e8fcbf4494587956f8b0d3a7_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\def91ec8ad4c86f5319f12fb9143a17dc7f910d62a57abe42efe9b6649e1e657.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\def91ec8ad4c86f5319f12fb9143a17dc7f910d62a57abe42efe9b6649e1e657_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\93ac8a5369d3db2a00da7d18f158e5a5389cd3aeb028520fa024d28800af77e1.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\93ac8a5369d3db2a00da7d18f158e5a5389cd3aeb028520fa024d28800af77e1_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\SimplicialComplexes\\582afa467ae35586f5584ae66a69ecc57162b78831eb8c4dae7a4e469202bb60.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\582afa467ae35586f5584ae66a69ecc57162b78831eb8c4dae7a4e469202bb60_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\SimplicialComplexes\\a62cea0fdbe21b1db3284da0b404f3e74a832f155a13876dc38f55e1c4ad3827.mp4",
-      "rev_file": "slides\\files\\SimplicialComplexes\\a62cea0fdbe21b1db3284da0b404f3e74a832f155a13876dc38f55e1c4ad3827_reversed.mp4",
+      "file": "slides\\files\\SimplicialComplexes\\8634bf1228b8f52af2f4f1bfc2f88b90b0dede7ad82e650e2236fca56496de89.mp4",
+      "rev_file": "slides\\files\\SimplicialComplexes\\8634bf1228b8f52af2f4f1bfc2f88b90b0dede7ad82e650e2236fca56496de89_reversed.mp4",
       "loop": false,
       "auto_next": false
     }

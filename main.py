@@ -29,9 +29,14 @@ VERDOSO = "#0072B2"
 
 class BlackSlide(Slide, Scene):
     def construct(self):
-        self.wait_time_between_slides = 1
         Text.set_default(color='BLACK')
         Mobject.set_default(color='BLACK')
+
+    def create_title(self, title):
+        self.wait_time_between_slides = .1
+        self.play(Create(title))
+        self.next_slide()
+        self.wait_time_between_slides = 0
 
     def finish(self):
         all_mobjects = VGroup()
@@ -48,7 +53,6 @@ def fade_text(slide, text):
     slide.play(FadeIn(text))
     slide.next_slide()
     slide.play(FadeOut(text))
-    slide.next_slide()
 
 
 def examples_pseudospheres(slide, indicate):
@@ -193,11 +197,8 @@ def examples_pseudospheres(slide, indicate):
         slide.next_slide()
     else:
         slide.play(Create(triangle1.set_opacity(0).set_fill(opacity=.5)))
-        slide.next_slide()
         slide.play(Create(triangle2.set_opacity(0).set_fill(opacity=.5)))
-        slide.next_slide()
         slide.play(Create(triangle3.set_opacity(0).set_fill(opacity=.5)))
-        slide.next_slide()
         slide.play(Create(triangle4.set_opacity(0).set_fill(opacity=.5)))
         slide.next_slide()
     slide.play(Unwrite(one),
@@ -313,8 +314,7 @@ class SimplicialComplexes(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("Common language")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         simplicial_complex = (
             VGroup(
                 VGroup(Text("A simplicial complex over ", font_size=30),
@@ -387,9 +387,8 @@ class PseudoesferaDefinicion(BlackSlide):
     def construct(self):
         super().construct()
         # inicio
-        question = Title("What is a pseudosphere?")
-        self.play(Create(question))
-        self.next_slide()
+        title = Title("What is a pseudosphere?")
+        self.create_title(title)
         # definicion pseudoesfera
         V = VGroup(MathTex(r"V_{p}:"),
                    Text(" finite for each", font_size=30),
@@ -419,18 +418,17 @@ class PseudoesferaDefinicion(BlackSlide):
                            MathTex(r"(p,v),(p,w)\in \sigma\implies v=w")).arrange(RIGHT)
         self.play(Write(simplices))
         self.next_slide()
-        self.play(Unwrite(def_psi + vertex + simplices))
         claro = Text("Clear, right?")
-        fade_text(self, claro)
+        self.play(Unwrite(def_psi + vertex + simplices),FadeIn(claro))
+        self.next_slide()
         self.finish()
 
 
 class Ejemplos(BlackSlide):
     def construct(self):
         super().construct()
-        examples = Title("Some examples")
-        self.play(Create(examples))
-        self.next_slide()
+        title = Title("Some examples")
+        self.create_title(title)
         examples_pseudospheres(self, True)
         ready = Text("Ready to study applications...")
         fade_text(self, ready)
@@ -452,8 +450,7 @@ class Matroides(BlackSlide):
         super().construct()
         # title = Title("My path begins!")
         title = Title("The first discovery")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
         subset = VGroup(pseudospheres, fam_pseudospheres)
@@ -467,8 +464,10 @@ class Matroides(BlackSlide):
         self.play(FadeIn(matr.shift(LEFT * 1.2)))
         matroids = VGroup(matr, subset)
         fam_matroids = Circle().surround(matroids)
+        self.wait_time_between_slides = .1
         self.play(Create(fam_matroids))
         self.next_slide()
+        self.wait_time_between_slides = 0
         self.play(Uncreate(fam_matroids))
         self.play(Uncreate(fam_pseudospheres))
         self.play(Uncreate(pseudospheres))
@@ -522,8 +521,7 @@ class PosetChrom(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("Which matroids are pseudospheres?")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
         subset = VGroup(pseudospheres, fam_pseudospheres).scale(.4)
@@ -549,8 +547,8 @@ class PosetChrom(BlackSlide):
         self.play(Transform(poset, c_balanced))
         self.next_slide()
         whole = VGroup(c_balanced, pseudospheres, fam_matroids, matr, fam_poset, caract, poset)
-        self.play(Uncreate(whole))
-        self.next_slide()
+        # self.play(Uncreate(whole))
+        # self.next_slide()
         # dem = Text("Proof")
         # self.play(FadeIn(dem.shift(UP * 2)))
         # self.next_slide()
@@ -600,8 +598,7 @@ class Join(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("The last characterization")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         # join
         ensamble1 = Text("Join ", font_size=30)
         ensamble2 = MathTex(r"\Delta\ast\Gamma=\{\sigma\cup\tau\mid\sigma\in\Delta,\tau\in\Gamma\}")
@@ -620,8 +617,7 @@ class GEspacios(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("Groups acting on pseudospheres")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         g_0 = VGroup(MathTex("G:"), Text(" a finite discrete group.", font_size=30)).arrange(RIGHT)
         g_ast = VGroup(MathTex(r"\underbrace{G\ast \cdots\ast G}_{n+1}"),
                        Text(" is a pseudosphere.", font_size=30)).arrange(RIGHT)
@@ -662,8 +658,7 @@ class BorsukUlam(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("The Borsuk-Ulam theorem is a theorem about pseudospheres")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         # Borsuk-Ulam
         bu = Text("Borsuk-Ulam")
         bu0 = Text("There is no continuous function ", font_size=30)
@@ -779,7 +774,7 @@ class Generaliza(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("Tucker's lemma is a theorem about pseudospheres!")
-        self.add(title)
+        self.create_title(title)
         # gsym = VGroup(MathTex(r"G-", font_size=40),
         #               Text("symmetric subdivisions ", font_size=40)).arrange(RIGHT)
         # self.play(Write(gsym.shift(UP * 3)))
@@ -814,8 +809,10 @@ class Generaliza(BlackSlide):
         for i in range(len(subdiv2)):
             self.play(Create(subdiv2[i]))
             self.next_slide()
+        self.wait_time_between_slides = .1
         self.play(Uncreate(pares + nones + lineas + etiquetas + subdiv1 + subdiv2))
         self.next_slide()
+        self.wait_time_between_slides = 0
         #tk = Text("Tucker").move_to(gsym)
         tk0 = VGroup(Text("If ", font_size=30), MathTex(r"\Delta"),
                      Text(" is a triangulation which is antipodally symmetric", font_size=30)).arrange(RIGHT)
@@ -890,8 +887,7 @@ class Portadores(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("We are almost ready for applications")
-        self.play(Create(title))
-        self.next_slide()
+        self.create_title(title)
         # mapas portadores
         carrier = VGroup(
             VGroup(Text("A carrier map sends, monotonously, each simplex in", font_size=30),
@@ -1012,7 +1008,7 @@ class DC(BlackSlide):
     def construct(self):
         super().construct()
         title = Title("An abstract theorem about distributed computing")
-        self.play(Create(title))
+        self.create_title(title)
         I = MathTex(r"I").move_to(UL + LEFT)
         SO = (MathTex(r"SO", substrings_to_isolate="S")
               .move_to(UR + RIGHT)
@@ -1053,8 +1049,8 @@ class DC(BlackSlide):
         leq = MathTex(r"\leq").move_to(ORIGIN)
         self.play(Write(leq))
         NewI = MathTex(r"\Psi_{n}G").move_to(I)
-        Newprotocol_t = LabeledDot(MathTex(r"\operatorname{Subd}"), point=protocol.get_center() + LEFT * 1)
-        NewSP = (MathTex(r"S(\operatorname{Subd}(\Psi_{n}G))")
+        Newprotocol_t = LabeledDot(MathTex(r"\operatorname{WF}"), point=protocol.get_center() + LEFT * 1)
+        NewSP = (MathTex(r"S(\operatorname{WF}(\Psi_{n}G))")
                  .move_to(SP)
                  .save_state())
         self.next_slide()
@@ -1063,7 +1059,7 @@ class DC(BlackSlide):
                                  Transform(SP, NewSP)))
         all = VGroup(NewI, SO, NewSP, decision, decision_t, protocol, task, task_t)
         IG = MathTex(r"I").move_to(NewI)
-        SPG = MathTex(r"S(\operatorname{Subd}(I))").move_to(NewSP)
+        SPG = MathTex(r"S(\operatorname{WF}(I))").move_to(NewSP)
         task_t_prime = LabeledDot(MathTex(r"\mathcal{T}'"), point=task.get_center() + UP * .5)
         I_must_be_G_free = VGroup(MathTex(r"G"), Text(" acts freely on "), MathTex(r"I")).arrange(RIGHT)
         I_must_be_G_free.scale(.6)
@@ -1075,9 +1071,7 @@ class DC(BlackSlide):
                                  FadeOut(leq, decision, decision_t)))
         self.next_slide()
         fade_text(self, I_must_be_G_free)
-        self.next_slide()
         self.play(FadeOut(I, SP, SO, task, protocol, protocol_t, task_t))
-        self.next_slide()
         self.play(Uncreate(title))
         self.next_slide()
         protocolG = Arrow(IG.get_center(), SPG.get_center(), color=BLACK, buff=.5, stroke_width=3)

@@ -1,122 +1,110 @@
 {
   "slides": [
     {
-      "file": "slides\\files\\Ejemplos\\75207fd480ddf1c57ea8fbbbcdb720474e8a1f5410bf0983bd9f3a30aebe9608.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\75207fd480ddf1c57ea8fbbbcdb720474e8a1f5410bf0983bd9f3a30aebe9608_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\eaa494fc9931ba685ec21595cb87a697610c91f12bd8c8022fca97c2e09099bd.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\eaa494fc9931ba685ec21595cb87a697610c91f12bd8c8022fca97c2e09099bd_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\abe5a6cf827efc6c5e3146036c6f47759628182ee7f643aa57c681bfad31a203.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\abe5a6cf827efc6c5e3146036c6f47759628182ee7f643aa57c681bfad31a203_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\1addd694ba440b3efe6a896cb26f04cfc6c7566a9f98b596f3c7d614884785ba.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\1addd694ba440b3efe6a896cb26f04cfc6c7566a9f98b596f3c7d614884785ba_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\c03f77805981f88dd1b6c4e0030ea7039a89451af4bb1d26b3577a2c1354081a.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\c03f77805981f88dd1b6c4e0030ea7039a89451af4bb1d26b3577a2c1354081a_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\6f4c862334a9cbad1d30ca7af6447be4c4cc1ed176b66b6d0079b4dad0548814.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\6f4c862334a9cbad1d30ca7af6447be4c4cc1ed176b66b6d0079b4dad0548814_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\369ae78081fbc9bd03e65635014c09a9455a2cce69af8866648ba24ed3bd9e25.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\369ae78081fbc9bd03e65635014c09a9455a2cce69af8866648ba24ed3bd9e25_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\ba5e1defc89076814920d2753966afa69badb6cb10f429186dcc4f570a350be9.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\ba5e1defc89076814920d2753966afa69badb6cb10f429186dcc4f570a350be9_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\7f1691bd5f4bad7047eeae51a381339be2d62c0a4a84d61d3474eecbf05243a1.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\7f1691bd5f4bad7047eeae51a381339be2d62c0a4a84d61d3474eecbf05243a1_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\a61a6daedcd8d2ba635c52ef7f749866e0ec223d0d7b33a3bc9a5a3c81f024e6.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\a61a6daedcd8d2ba635c52ef7f749866e0ec223d0d7b33a3bc9a5a3c81f024e6_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\5e899795607ec6eec1fbe0e0344c80cd541b43c6d03196ef9a6bcc369b2fa1d7.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\5e899795607ec6eec1fbe0e0344c80cd541b43c6d03196ef9a6bcc369b2fa1d7_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\84947b557943c5fa1aee1d74afabf554360a7d05397e41ca6342d1e3ea9da0f7.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\84947b557943c5fa1aee1d74afabf554360a7d05397e41ca6342d1e3ea9da0f7_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\2420e97757874f948e29e2eec245c2f33ddae5e127c110687c86c57f522a2250.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\2420e97757874f948e29e2eec245c2f33ddae5e127c110687c86c57f522a2250_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\53b8ba14a6f524bb93e799601c4e52cffea1b493053d9b808fec92a10f4824a4.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\53b8ba14a6f524bb93e799601c4e52cffea1b493053d9b808fec92a10f4824a4_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\b0a32a9b8b0425344769df350b60d686cad426bf5658d00c82a297b4792e6283.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\b0a32a9b8b0425344769df350b60d686cad426bf5658d00c82a297b4792e6283_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\ec337f6fc7df6fbbf485ee2dc4c1d64335272e2f7f806c56df29123d69b108d7.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\ec337f6fc7df6fbbf485ee2dc4c1d64335272e2f7f806c56df29123d69b108d7_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\95f5664b65c57175566df6ab1288198c997a3886829586e2a73cd99578a56721.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\95f5664b65c57175566df6ab1288198c997a3886829586e2a73cd99578a56721_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\7028815e6e17e3c8154d5a0f5d8535ef5988a84575e735e3a314c0adbb14c010.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\7028815e6e17e3c8154d5a0f5d8535ef5988a84575e735e3a314c0adbb14c010_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\66c3720e4d297c6d7430bfeb4257166a0819422f350e5d263b8d4e933fd0a217.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\66c3720e4d297c6d7430bfeb4257166a0819422f350e5d263b8d4e933fd0a217_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\055ee032c3713bacb53f5e410f1fe67f6310336a7b7dbe95f33c38eea354e7bb.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\055ee032c3713bacb53f5e410f1fe67f6310336a7b7dbe95f33c38eea354e7bb_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\6782b26e67cf4473fa63ecfdc6fabd60943861010f351875e713a15230cb3e50.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\6782b26e67cf4473fa63ecfdc6fabd60943861010f351875e713a15230cb3e50_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\bdebbecbb5b3c88e99d32ead233af9abb21b9931703235b0d42fc237db736eb3.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\bdebbecbb5b3c88e99d32ead233af9abb21b9931703235b0d42fc237db736eb3_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\beb1703b36f431e057fd3f69a70253f35ca04140f0a19061e467cb23a20323ee.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\beb1703b36f431e057fd3f69a70253f35ca04140f0a19061e467cb23a20323ee_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\e7e8f63ba36a2d093cd09f74b69e86c59a7a9db8c9f291f08f530021202bb0b5.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\e7e8f63ba36a2d093cd09f74b69e86c59a7a9db8c9f291f08f530021202bb0b5_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\55ca6d1221f99cdc3a5bb6c7e847f923f44f2cd13dd3b605e8230c7507165759.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\55ca6d1221f99cdc3a5bb6c7e847f923f44f2cd13dd3b605e8230c7507165759_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\842eb817af75c36f8f89874608a3891411d5c8c56247f315811dfbb6c43975dd.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\842eb817af75c36f8f89874608a3891411d5c8c56247f315811dfbb6c43975dd_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\467e0922d4ea008e4bae3a2e0916d406f77003757253f48509ad6ae7f01ab58b.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\467e0922d4ea008e4bae3a2e0916d406f77003757253f48509ad6ae7f01ab58b_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\3e17de706c06bd602c0db86ef37edd31fc39c278ecc3e493040eb597c4326ee6.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\3e17de706c06bd602c0db86ef37edd31fc39c278ecc3e493040eb597c4326ee6_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\efeb8f8d51680ed3983a5054c254994749bd1b34459844fc69a4b3923bc43421.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\efeb8f8d51680ed3983a5054c254994749bd1b34459844fc69a4b3923bc43421_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\1604ba606e5aaf455d7a3acfc8f2c969e00ea064fd89e86ab53add02bc80d25d.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\1604ba606e5aaf455d7a3acfc8f2c969e00ea064fd89e86ab53add02bc80d25d_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\2697b8b7233d6e4778c3f4244bedd1939e33bab4e602d4a73d6d82d8f1959573.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\2697b8b7233d6e4778c3f4244bedd1939e33bab4e602d4a73d6d82d8f1959573_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\e10570904c0dfd27b3b75f45e2dfdabb445e61e4536d2bbc601f76804a5dbe32.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\e10570904c0dfd27b3b75f45e2dfdabb445e61e4536d2bbc601f76804a5dbe32_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\528f4e18df08ccc0d65eace6fa6e2f977b4660f2bcaf18e6705744bf82ac394f.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\528f4e18df08ccc0d65eace6fa6e2f977b4660f2bcaf18e6705744bf82ac394f_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\Ejemplos\\8253c27f5de45989204654a2193e2bfde233a144dac937f85f360a0d03247f73.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\8253c27f5de45989204654a2193e2bfde233a144dac937f85f360a0d03247f73_reversed.mp4",
-      "loop": false,
-      "auto_next": false
-    },
-    {
-      "file": "slides\\files\\Ejemplos\\1f8b072a4e1e8f0f723028d87601b0006ae2f5b65317bda1deea7e6498d6cfb3.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\1f8b072a4e1e8f0f723028d87601b0006ae2f5b65317bda1deea7e6498d6cfb3_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\8a499397808ac3ae80770199d4f8c634cb00a19f5b134a79ea624fce2f827788.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\8a499397808ac3ae80770199d4f8c634cb00a19f5b134a79ea624fce2f827788_reversed.mp4",
       "loop": true,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Ejemplos\\0fc1dedba8edf00cc71cfb919eba77a9cd912acb54ee21001c3e92705d253003.mp4",
-      "rev_file": "slides\\files\\Ejemplos\\0fc1dedba8edf00cc71cfb919eba77a9cd912acb54ee21001c3e92705d253003_reversed.mp4",
+      "file": "slides\\files\\Ejemplos\\34ab41496bdee546315f7aa2f267b60522f8d1f70517ff9814a9f169aada79d2.mp4",
+      "rev_file": "slides\\files\\Ejemplos\\34ab41496bdee546315f7aa2f267b60522f8d1f70517ff9814a9f169aada79d2_reversed.mp4",
       "loop": false,
       "auto_next": false
     }
