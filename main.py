@@ -373,6 +373,7 @@ class SimplicialComplexes(BlackSlide):
                                fill_color=GREY,
                                fill_opacity=1)
         triangle = VGroup(triangle_pic)
+        self.wait_time_between_slides = .1
         self.play(TransformMatchingShapes(edge_text, triangle_text),
                   TransformMatchingShapes(edge_tex, triangle_tex),
                   # Write(edge_pic_2),
@@ -380,6 +381,7 @@ class SimplicialComplexes(BlackSlide):
                   Write(vertex_pic_3.shift(UP * 1.5)),
                   Create(triangle))
         self.next_slide()
+        self.wait_time_between_slides = 0
         self.finish()
 
 
@@ -419,8 +421,10 @@ class PseudoesferaDefinicion(BlackSlide):
         self.play(Write(simplices))
         self.next_slide()
         claro = Text("Clear, right?")
+        self.wait_time_between_slides = .1
         self.play(Unwrite(def_psi + vertex + simplices),FadeIn(claro))
         self.next_slide()
+        self.wait_time_between_slides = 0
         self.finish()
 
 
@@ -467,7 +471,6 @@ class Matroides(BlackSlide):
         self.wait_time_between_slides = .1
         self.play(Create(fam_matroids))
         self.next_slide()
-        self.wait_time_between_slides = 0
         self.play(Uncreate(fam_matroids))
         self.play(Uncreate(fam_pseudospheres))
         self.play(Uncreate(pseudospheres))
@@ -507,6 +510,7 @@ class Matroides(BlackSlide):
                         .arrange(DOWN))
         self.play(Write(consequences))
         self.next_slide()
+        self.wait_time_between_slides = 0
         homotopy = Text("are shellable because they are matroids.", font_size=30).move_to(consequences[1])
         self.play(Transform(consequences[1], homotopy))
         self.next_slide()
@@ -536,11 +540,13 @@ class PosetChrom(BlackSlide):
         self.play(Create(poset.next_to(pseudospheres, RIGHT * 4.8)))
         poset_subset = VGroup(subset, poset)
         fam_poset = Circle().surround(poset_subset, buffer_factor=1)
+        self.wait_time_between_slides = .1
         self.play(Create(fam_poset))
         caract = Intersection(fam_poset, fam_matroids, color=BLACK)
         self.next_slide()
         self.play(FadeTransform(fam_pseudospheres, caract, replace_mobject_with_target_in_scene=False))
         self.next_slide()
+        self.wait_time_between_slides = 0
         c_simpl = Text("Chromatic", font_size=20).next_to(poset, buff=-1.3).shift(UP * .3)
         balanced = Text("complexes", font_size=20).next_to(c_simpl, DOWN)
         c_balanced = VGroup(c_simpl, balanced)
@@ -994,8 +1000,10 @@ class Portadores(BlackSlide):
         cleft = Arrow(start=start_pt, end=end_pt, color=BLACK)
         self.play(Create(cleft))
         self.next_slide()
+        self.wait_time_between_slides = .1
         self.play(Create(both))
         self.next_slide()
+        self.wait_time_between_slides = 0
         self.play(FadeOut(cleft))
         start_pt = Dot().next_to(square_input.get_right(), direction=np.array([1, 0, 0]), buff=.01)
         cright = Arrow(start=start_pt, end=end_pt, color=BLACK)
