@@ -29,7 +29,7 @@ VERDOSO = "#0072B2"
 
 class BlackSlide(Slide, Scene):
     def construct(self):
-        Text.set_default(color='BLACK')
+        Text.set_default(color='BLACK', font_size=30)
         Mobject.set_default(color='BLACK')
 
     def create_title(self, title):
@@ -217,12 +217,12 @@ def examples_pseudospheres(slide, indicate):
 def esfera(slide, full):
     escala = 2.3
     origen = np.array((2, 2.6, 1)) * escala
-    azul1 = LabeledDot(Tex("1", font_size=30), point=np.array((2, 3, 1)) * escala - origen, color=AZUL)
-    azul_1 = LabeledDot(Tex("-1", font_size=30), point=np.array((2.2, 2.5, 1)) * escala - origen, color=AZUL)
-    rosa1 = LabeledDot(Tex("1", font_size=30), point=np.array((2.5, 3.2, 1)) * escala - origen, color=ROSA)
-    rosa_1 = LabeledDot(Tex("-1", font_size=30), point=np.array((1.5, 2, 1)) * escala - origen, color=ROSA)
-    naranja1 = LabeledDot(Tex("1", font_size=30), point=np.array((1, 3, 1)) * escala - origen, color=NARANJA)
-    naranja_1 = LabeledDot(Tex("-1", font_size=30), point=np.array((3, 2, 1)) * escala - origen, color=NARANJA)
+    azul1 = LabeledDot(Tex("1"), point=np.array((2, 3, 1)) * escala - origen, color=AZUL)
+    azul_1 = LabeledDot(Tex("-1"), point=np.array((2.2, 2.5, 1)) * escala - origen, color=AZUL)
+    rosa1 = LabeledDot(Tex("1"), point=np.array((2.5, 3.2, 1)) * escala - origen, color=ROSA)
+    rosa_1 = LabeledDot(Tex("-1"), point=np.array((1.5, 2, 1)) * escala - origen, color=ROSA)
+    naranja1 = LabeledDot(Tex("1"), point=np.array((1, 3, 1)) * escala - origen, color=NARANJA)
+    naranja_1 = LabeledDot(Tex("-1"), point=np.array((3, 2, 1)) * escala - origen, color=NARANJA)
     azules = VGroup(azul1, azul_1)
     rosas = VGroup(rosa1, rosa_1)
     naranjas = VGroup(naranja1, naranja_1)
@@ -265,11 +265,11 @@ def esfera(slide, full):
 
         slide.play(Create(puntos_1), Create(lineas_1), Create(triangulos_1))
         slide.next_slide()
-        x = LabeledDot(MathTex(r"x", font_size=30), point=triangulos_1[1].get_center(), color=WHITE)
+        x = LabeledDot(MathTex(r"x"), point=triangulos_1[1].get_center(), color=WHITE)
         slide.play(Create(x))
         slide.next_slide()
         extension = MathTex(r"f(gx)=gf(x)")
-        slide.play(Write(extension.shift(UP * 3)))
+        slide.play(Write(extension.shift(UP * 2 +RIGHT*3.5)))
         slide.next_slide()
         slide.play(Indicate(cuadro, color=VERDOSO), Indicate(azules, color=VERDOSO), Indicate(rosas, color=VERDOSO))
         slide.next_slide()
@@ -281,6 +281,8 @@ def esfera(slide, full):
         lineas_2.set_z_index(-1)
         triangulos_2.set_z_index(-2)
         slide.play(Create(naranja_1), Create(lineas_2), Create(triangulos_2))
+        extension2 = MathTex(r"f(gx)=g\hat{f}(x)", color=AZUL).shift(UP * 2 + RIGHT * 3.5)
+        slide.play(TransformMatchingShapes(extension, extension2))
         slide.next_slide()
 
 
@@ -317,19 +319,19 @@ class SimplicialComplexes(BlackSlide):
         self.create_title(title)
         simplicial_complex = (
             VGroup(
-                VGroup(Text("A simplicial complex over ", font_size=30),
+                VGroup(Text("A simplicial complex over "),
                        MathTex(r"V"),
-                       Text(" is a subset ", font_size=30)).arrange(RIGHT),
+                       Text(" is a subset ")).arrange(RIGHT),
                 VGroup(MathTex(r"\Delta\subseteq\mathcal{P}(V)"),
-                       Text("closed under contentions", font_size=30)).arrange(RIGHT)).arrange(DOWN))
+                       Text("closed under contentions")).arrange(RIGHT)).arrange(DOWN))
         fade_text(self, simplicial_complex)
-        vertex_text = Text(" A vertex.", font_size=30)
+        vertex_text = Text(" A vertex.")
         vertex_pic = Dot(radius=.1, color=BLACK).set_z_index(1)
         vertex_tex = VGroup(MathTex(r"\{"), vertex_pic.copy(), MathTex(r"\}")).arrange(RIGHT)
         vertex = VGroup(vertex_text, vertex_pic, vertex_tex).arrange(DOWN, buff=1.9)
         self.play(Write(vertex))
         self.next_slide()
-        edge_text = Text(" An edge.", font_size=30)
+        edge_text = Text(" An edge.")
         vertex_pic_2 = Dot(radius=.1, color=ROSA).set_z_index(1)
         edge_tex = VGroup(MathTex(r"\{"),
                           vertex_pic.copy(),
@@ -349,7 +351,7 @@ class SimplicialComplexes(BlackSlide):
         self.next_slide()
         self.play(Create(edge_pic))
         self.next_slide()
-        triangle_text = Text(" A triangle.", font_size=30)
+        triangle_text = Text(" A triangle.")
         vertex_pic_3 = Dot(radius=.1, color=AZUL).set_z_index(1)
         triangle_tex = VGroup(MathTex(r"\{"),
                               vertex_pic.copy(),
@@ -393,10 +395,10 @@ class PseudoesferaDefinicion(BlackSlide):
         self.create_title(title)
         # definicion pseudoesfera
         V = VGroup(MathTex(r"V_{p}:"),
-                   Text(" finite for each", font_size=30),
+                   Text(" finite for each"),
                    MathTex(r"p\in\mathbb{P}")).arrange(RIGHT)
         P = VGroup(MathTex(r"\mathbb{P}:"),
-                   Text(" finite", font_size=30)).arrange(RIGHT)
+                   Text(" finite")).arrange(RIGHT)
         self.play(Write(P))
         self.next_slide()
         self.play(P.animate.shift(UP))
@@ -404,25 +406,29 @@ class PseudoesferaDefinicion(BlackSlide):
         self.next_slide()
         self.play(V.animate.shift(UP), P.animate.shift(UP))
         def_psi = VGroup(MathTex(r"\Psi"),
-                         Text(" simplicial complex", font_size=30)).arrange(RIGHT)
+                         Text(" simplicial complex")).arrange(RIGHT)
         self.play(Write(def_psi))
         self.next_slide()
         self.play(Unwrite(P + V))
         # definicion pseudoesfera vertices, simplejos
         self.play(def_psi.animate.shift(UP))
-        vertex = VGroup(Text("Vertices: ", font_size=30),
-                        MathTex(r"(p,v)"), Text(" where ", font_size=30),
+        vertex = VGroup(Text("Vertices: "),
+                        MathTex(r"(p,v)"), Text(" where "),
                         MathTex(r"v\in V_{p}, p\in\mathbb{P}")).arrange(RIGHT)
         self.play(Write(vertex))
         self.next_slide()
         self.play(def_psi.animate.shift(UP), vertex.animate.shift(UP))
-        simplices = VGroup(Text("Simplices: ", font_size=30),
+        simplices = VGroup(Text("Simplices: "),
                            MathTex(r"(p,v),(p,w)\in \sigma\implies v=w")).arrange(RIGHT)
         self.play(Write(simplices))
         self.next_slide()
         claro = Text("Clear, right?")
         self.wait_time_between_slides = .1
-        self.play(Unwrite(def_psi + vertex + simplices),FadeIn(claro))
+        self.play(Unwrite(def_psi + vertex + simplices))
+        super_afirmacion = Text("It is the biggest chromatic complex on those vertices.")
+        self.play(FadeIn(super_afirmacion))
+        self.next_slide()
+        self.play(FadeOut(super_afirmacion), FadeIn(claro))
         self.next_slide()
         self.wait_time_between_slides = 0
         self.finish()
@@ -458,6 +464,7 @@ class Matroides(BlackSlide):
         pseudospheres = Text("Pseudospheres")
         fam_pseudospheres = Circle().surround(pseudospheres)
         subset = VGroup(pseudospheres, fam_pseudospheres)
+        self.wait_time_between_slides = .1
         self.play(Write(pseudospheres))
         self.play(Create(fam_pseudospheres))
         self.next_slide()
@@ -468,54 +475,54 @@ class Matroides(BlackSlide):
         self.play(FadeIn(matr.shift(LEFT * 1.2)))
         matroids = VGroup(matr, subset)
         fam_matroids = Circle().surround(matroids)
-        self.wait_time_between_slides = .1
         self.play(Create(fam_matroids))
         self.next_slide()
         self.play(Uncreate(fam_matroids))
         self.play(Uncreate(fam_pseudospheres))
         self.play(Uncreate(pseudospheres))
         self.play(Uncreate(matr))
-        # self.play(matr.animate.move_to(ORIGIN + UP * 3), title.animate.fade(1))
-        # self.play(ScaleInPlace(matr, 2))
-        # self.next_slide()
-        # matroid_complex = VGroup(
-        #     MathTex(r"\sigma,\tau\in\Delta",
-        #             tex_template=my_template, font_size=30),
-        #     MathTex(r"\dim (\sigma)>\dim (\tau) \implies"
-        #             r" \exists x\in\sigma\setminus\tau \colon \tau\cup\{x\}\in\Delta",
-        #             tex_template=my_template, font_size=30)).arrange(DOWN)
-        # self.play(Write(matroid_complex))
-        # self.next_slide()
-        # self.play(matroid_complex.animate.shift(UP * 2))
-        # triangle = Triangle(color=GREY, fill_color=GREY, fill_opacity=1).shift(LEFT * 2 + DOWN)
-        # triangle.set_z_index(-1)
-        # p1 = Dot(point=triangle.points[0], radius=.1, color=BLACK)
-        # p2 = Dot(point=triangle.points[3], radius=.1, color=NARANJA)
-        # p3 = Dot(point=triangle.points[7], radius=.1, color=AZUL)
-        # edge = Line(p2.get_center(), p3.get_center(), color=GREY, z_index=-1)
-        # tres = VGroup(p1, p2, p3, triangle, edge)
-        # triangle2 = Triangle(color=GREY, fill_color=GREY, fill_opacity=1).shift(RIGHT * 2 + DOWN)
-        # triangle2.set_z_index(-1)
-        # q2 = Dot(point=triangle2.points[3], radius=.1, color=ROSA)
-        # q3 = Dot(point=triangle2.points[7], radius=.1, color=AZUL)
-        # dos = VGroup(q2, q3)
-        # self.play(Create(dos + tres))
-        # self.next_slide()
-        # self.play(Uncreate(triangle), p1.animate.move_to(triangle2.points[0]), Create(triangle2))
-        # self.next_slide()
-        # self.play(Uncreate(tres), Uncreate(dos), Uncreate(triangle2), Unwrite(matroid_complex), Unwrite(matr))
-        # self.next_slide()
-        consequences = (VGroup(Text("Pseudospheres", font_size=30),
-                               Text("are shellable (Theorem 13.3.6 of Herlihy, M., et.al. 2013).", font_size=30))
+        title2 = Title("Matroids")
+        self.play(Transform(title, title2))
+        self.next_slide()
+        matroid_complex = VGroup(
+            MathTex(r"\sigma,\tau\in\Delta",
+                    tex_template=my_template),
+            MathTex(r"\dim (\sigma)>\dim (\tau) \implies"
+                    r" \exists x\in\sigma\setminus\tau \colon \tau\cup\{x\}\in\Delta",
+                    tex_template=my_template)).arrange(DOWN)
+        self.play(Write(matroid_complex))
+        self.next_slide()
+        self.play(matroid_complex.animate.shift(UP * 2))
+        triangle = Triangle(color=GREY, fill_color=GREY, fill_opacity=1).shift(LEFT * 2 + DOWN)
+        triangle.set_z_index(-1)
+        p1 = Dot(point=triangle.points[0], radius=.1, color=BLACK)
+        p2 = Dot(point=triangle.points[3], radius=.1, color=NARANJA)
+        p3 = Dot(point=triangle.points[7], radius=.1, color=AZUL)
+        edge = Line(p2.get_center(), p3.get_center(), color=GREY, z_index=-1)
+        tres = VGroup(p1, p2, p3, triangle, edge)
+        triangle2 = Triangle(color=GREY, fill_color=GREY, fill_opacity=1).shift(RIGHT * 2 + DOWN)
+        triangle2.set_z_index(-1)
+        q2 = Dot(point=triangle2.points[3], radius=.1, color=ROSA)
+        q3 = Dot(point=triangle2.points[7], radius=.1, color=AZUL)
+        line = Line(q2.get_center(),q3.get_center(),color=GREY).set_z_index(-1)
+        dos = VGroup(q2, q3, line)
+        self.play(Create(dos + tres))
+        self.next_slide()
+        self.play(Uncreate(triangle), p1.animate.move_to(triangle2.points[0]), Create(triangle2))
+        self.next_slide()
+        self.play(Uncreate(tres), Uncreate(dos), Uncreate(triangle2), Unwrite(matroid_complex), Unwrite(matr))
+        self.next_slide()
+        consequences = (VGroup(Text("Pseudospheres"),
+                               Text("are shellable (Theorem 13.3.6 of Herlihy, M., et.al. 2013)."))
                         .arrange(DOWN))
         self.play(Write(consequences))
         self.next_slide()
         self.wait_time_between_slides = 0
-        homotopy = Text("are shellable because they are matroids.", font_size=30).move_to(consequences[1])
+        homotopy = Text("are shellable because they are matroids.").move_to(consequences[1])
         self.play(Transform(consequences[1], homotopy))
         self.next_slide()
         self.finish()
-        # morse = Text("With no shellings I proved that", font_size=30)
+        # morse = Text("With no shellings I proved that")
         # self.play(FadeIn(morse.shift(UP * 2)))
         # self.next_slide()
         # self.play(Unwrite(consequences), Unwrite(morse))
@@ -606,13 +613,13 @@ class Join(BlackSlide):
         title = Title("The last characterization")
         self.create_title(title)
         # join
-        ensamble1 = Text("Join ", font_size=30)
+        ensamble1 = Text("Join ")
         ensamble2 = MathTex(r"\Delta\ast\Gamma=\{\sigma\cup\tau\mid\sigma\in\Delta,\tau\in\Gamma\}")
         ensamble = VGroup(ensamble1, ensamble2).arrange(DOWN)
         fade_text(self, ensamble)
         examples_pseudospheres(self, False)
         # join caracter
-        ensamble_caract = Text("Pseudospheres are precisely\n finite joins of finite sets.", font_size=30)
+        ensamble_caract = Text("Pseudospheres are precisely\n finite joins of finite sets.")
         self.play(AddTextLetterByLetter(ensamble_caract))
         self.next_slide()
         self.play(RemoveTextLetterByLetter(ensamble_caract))
@@ -624,23 +631,23 @@ class GEspacios(BlackSlide):
         super().construct()
         title = Title("Groups acting on pseudospheres")
         self.create_title(title)
-        g_0 = VGroup(MathTex("G:"), Text(" a finite discrete group.", font_size=30)).arrange(RIGHT)
+        g_0 = VGroup(MathTex("G:"), Text(" a finite discrete group.")).arrange(RIGHT)
         g_ast = VGroup(MathTex(r"\underbrace{G\ast \cdots\ast G}_{n+1}"),
-                       Text(" is a pseudosphere.", font_size=30)).arrange(RIGHT)
+                       Text(" is a pseudosphere.")).arrange(RIGHT)
         g_psi = VGroup(g_0, g_ast).arrange(DOWN)
         self.play(Write(g_0))
         self.next_slide()
         self.play(Write(g_ast))
         self.next_slide()
         # E_n spaces
-        g_acts = VGroup(MathTex("G"), Text(" acts on ", font_size=30)).arrange(RIGHT)
+        g_acts = VGroup(MathTex("G"), Text(" acts on ")).arrange(RIGHT)
         g_ast2 = VGroup(MathTex(r"\underbrace{G\ast \cdots\ast G}_{n+1}"),
                         MathTex(r"=\Psi_{n}(G).")).arrange(RIGHT)
         g_psi2 = VGroup(g_acts, g_ast2).arrange(DOWN)
         self.play(ReplacementTransform(g_psi, g_psi2))
         self.next_slide()
         # esferas
-        z_2_acts = VGroup(MathTex(r"\mathbb{Z}_{2}"), Text(" acts on ", font_size=30)).arrange(RIGHT)
+        z_2_acts = VGroup(MathTex(r"\mathbb{Z}_{2}"), Text(" acts on ")).arrange(RIGHT)
         z_2_ast2 = VGroup(MathTex(r"\underbrace{\mathbb{Z}_{2}\ast \cdots\ast \mathbb{Z}_{2}}_{n+1}"),
                           MathTex(r"=\Psi_{n}(\mathbb{Z}_{2}).")).arrange(RIGHT)
         sphere = VGroup(MathTex(r"\underbrace{\mathbb{Z}_{2}\ast \cdots\ast \mathbb{Z}_{2}}_{n+1}"),
@@ -667,9 +674,9 @@ class BorsukUlam(BlackSlide):
         self.create_title(title)
         # Borsuk-Ulam
         bu = Text("Borsuk-Ulam")
-        bu0 = Text("There is no continuous function ", font_size=30)
+        bu0 = Text("There is no continuous function ")
         bu1 = MathTex(r"f\colon S^{n+1}\rightarrow S^{n}")
-        bu2 = Text(" preserving the action of ", font_size=30)
+        bu2 = Text(" preserving the action of ")
         bu3 = MathTex(r"\mathbb{Z}_{2}")
         # orden del texto y titulo
         buthm0 = VGroup(bu0, bu1).arrange(DOWN)
@@ -698,14 +705,14 @@ class BorsukUlam(BlackSlide):
         # tucker
         # tucker enunciado
         tk = Text("Tucker").move_to(bu)
-        tk0 = VGroup(Text("If ", font_size=30), MathTex(r"\Delta"),
-                     Text(" is a triangulation which is antipodally symmetric", font_size=30)).arrange(RIGHT)
-        tk1 = VGroup(Text(" on the boundary of  ", font_size=30), MathTex(r"B^{n}"),
-                     Text(", there is no simplicial map ", font_size=30)).arrange(RIGHT)
+        tk0 = VGroup(Text("If "), MathTex(r"\Delta"),
+                     Text(" is a triangulation which is antipodally symmetric")).arrange(RIGHT)
+        tk1 = VGroup(Text(" on the boundary of  "), MathTex(r"B^{n}"),
+                     Text(", there is no simplicial map ")).arrange(RIGHT)
         tk2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(\mathbb{Z}_{2})").arrange(RIGHT)
-        tk3 = VGroup(Text("preserving the action of ", font_size=30),
+        tk3 = VGroup(Text("preserving the action of "),
                      MathTex(r"\mathbb{Z}_{2}"),
-                     Text("on the boundary of ", font_size=30),
+                     Text("on the boundary of "),
                      MathTex(r"B^{n}")).arrange(RIGHT)
         tucker = VGroup(tk, tk0, tk1, tk2, tk3).arrange(DOWN)
         self.play(Write(tucker))
@@ -820,14 +827,14 @@ class Generaliza(BlackSlide):
         self.next_slide()
         self.wait_time_between_slides = 0
         #tk = Text("Tucker").move_to(gsym)
-        tk0 = VGroup(Text("If ", font_size=30), MathTex(r"\Delta"),
-                     Text(" is a triangulation which is antipodally symmetric", font_size=30)).arrange(RIGHT)
-        tk1 = VGroup(Text(" on the boundary of  ", font_size=30), MathTex(r"B^{n}"),
-                     Text(", there is no simplicial map ", font_size=30)).arrange(RIGHT, buff=1.2)
+        tk0 = VGroup(Text("If "), MathTex(r"\Delta"),
+                     Text(" is a triangulation which is antipodally symmetric")).arrange(RIGHT)
+        tk1 = VGroup(Text(" on the boundary of  "), MathTex(r"B^{n}"),
+                     Text(", there is no simplicial map ")).arrange(RIGHT, buff=1.2)
         tk2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(\mathbb{Z}_{2})").arrange(RIGHT)
         tk3 = VGroup(Text(" preserving the action of ",
                           font_size=30), MathTex(r"\mathbb{Z}_{2}"),
-                     VGroup(Text("on the boundary of ", font_size=30),
+                     VGroup(Text("on the boundary of "),
                      MathTex(r"B^{n}")).arrange(RIGHT, buff = 1.2)).arrange(RIGHT)
         tucker = VGroup(tk0, tk1, tk2, tk3).arrange(DOWN)
         tk1_cone = MathTex(r"S^{n-1}\ast x").move_to(tk1[1])
@@ -839,54 +846,54 @@ class Generaliza(BlackSlide):
         self.next_slide()
         # luis alberto
         # la = Text("Luis Alberto").move_to(tk)
-        la0 = VGroup(Text("If ", font_size=30), MathTex(r"\Delta"),
-                     Text(" is a subdivision which is", font_size=30), MathTex(r"G-"),
-                     Text("symmetric", font_size=30)).arrange(RIGHT).move_to(tk0)
-        la1 = VGroup(Text(" on the boundary of  ", font_size=30),
+        la0 = VGroup(Text("If "), MathTex(r"\Delta"),
+                     Text(" is a subdivision which is"), MathTex(r"G-"),
+                     Text("symmetric")).arrange(RIGHT).move_to(tk0)
+        la1 = VGroup(Text(" on the boundary of  "),
                      MathTex(r"\Psi_{n-1}(G)\ast x"),
-                     Text(r", there is no simplicial map ", font_size=30)).arrange(RIGHT).move_to(tk1)
+                     Text(r", there is no simplicial map ")).arrange(RIGHT).move_to(tk1)
         la2 = MathTex(r"f\colon\Delta\rightarrow\Psi_{n-1}(G)").arrange(RIGHT).move_to(tk2)
-        la3 = VGroup(Text("preserving the action of ", font_size=30),
-                     MathTex(r"G"), Text("on ", font_size=30),
+        la3 = VGroup(Text("preserving the action of "),
+                     MathTex(r"G"), Text("on "),
                      MathTex(r"\Psi_{n-1}(G)")).arrange(RIGHT).move_to(tk3)
         self.play(TransformMatchingShapes(tk0, la0),
                   TransformMatchingShapes(tk1[1], la1[1]),
                   TransformMatchingShapes(tk2, la2),
                   TransformMatchingShapes(tk3, la3))
         self.next_slide()
+        self.play(FadeOut(la0),
+                  FadeOut(la1[1]),
+                  FadeOut(la2),
+                  FadeOut(la3),
+                  FadeOut(tk1[2:]),
+                  FadeOut(tk1[0]))
+        prueba = Text("Proof")
+        fade_text(self, prueba)
+        bu = Text("Matousek").shift(UP*2)
+        self.play(FadeIn(bu))
+        self.next_slide()
+        bu0 = Text("There is no continuous function ").shift(UP )
+        bu1 = MathTex(r"f\colon |\Psi_{n+1}(G)|\rightarrow |\Psi_{n}(G)|").move_to(bu0.get_center() + DOWN)
+        bu2 = Text(" preserving the action of ")
+        bu3 = MathTex(r"G")
+        buthm1 = VGroup(bu2, bu3).arrange(RIGHT).move_to(bu1.get_center() + DOWN)
+        self.play(FadeIn(bu0, bu1, buthm1))
+        self.next_slide()
+        self.play(FadeOut(bu0, bu, buthm1), bu1.animate.move_to(bu))
+        self.next_slide()
+        join = MathTex(r"\Psi_{n+1}(G) = \Psi_{n}(G)\ast G = \bigcup_{g\in G} \Psi_{n}(G)\ast g").move_to(bu0)
+        self.play(Write(join))
+        self.next_slide()
+        iff = MathTex(r"\iff").move_to(join)
+        self.play(Transform(join, iff))
+        bu_version2 = MathTex(r"\hat{f}\colon |\Psi_{n}(G)\ast e|\rightarrow |\Psi_{n}(G)|").move_to(
+            join.get_center() + DOWN)
+        self.play(Write(bu_version2))
+        self.next_slide()
+        guarda = VGroup(bu1, join, bu_version2)
+        self.play(guarda.animate.to_corner(LEFT + UP, buff=.5).scale(.4))
+        esfera(self, False)
         self.finish()
-        # self.play(FadeOut(la0),
-        #           FadeOut(la1[1]),
-        #           FadeOut(la2),
-        #           FadeOut(la3),
-        #           FadeOut(tk1[2:]),
-        #           FadeOut(tk1[0]))
-        # prueba = Text("Proof")
-        # fade_text(self, prueba)
-        # bu = Text("Matousek").shift(UP * 3)
-        # self.play(FadeIn(bu))
-        # bu0 = Text("There is no continuous function ", font_size=30).shift(UP * 2)
-        # bu1 = MathTex(r"f\colon |\Psi_{n+1}(G)|\rightarrow |\Psi_{n}(G)|").move_to(bu0.get_center() + DOWN)
-        # bu2 = Text(" preserving the action of ", font_size=30)
-        # bu3 = MathTex(r"G")
-        # buthm1 = VGroup(bu2, bu3).arrange(RIGHT).move_to(bu1.get_center() + DOWN)
-        # self.play(FadeIn(bu0, bu1, buthm1))
-        # self.next_slide()
-        # self.play(FadeOut(bu0, bu, buthm1), bu1.animate.move_to(bu))
-        # self.next_slide()
-        # join = MathTex(r"\Psi_{n+1}(G) = \Psi_{n}(G)\ast G = \bigcup_{g\in G} \Psi_{n}(G)\ast g").move_to(bu0)
-        # self.play(Write(join))
-        # self.next_slide()
-        # iff = MathTex(r"\iff").move_to(join)
-        # self.play(Transform(join, iff))
-        # bu_version2 = MathTex(r"\hat{f}\colon |\Psi_{n}(G)\ast e|\rightarrow |\Psi_{n}(G)|").move_to(
-        #     join.get_center() + DOWN)
-        # self.play(Write(bu_version2))
-        # self.next_slide()
-        # guarda = VGroup(bu1, join, bu_version2)
-        # self.play(guarda.animate.to_corner(LEFT + UP, buff=.5).scale(.4))
-        # esfera(self, False)
-        # self.finish()
 
 
 class Portadores(BlackSlide):
@@ -896,16 +903,16 @@ class Portadores(BlackSlide):
         self.create_title(title)
         # mapas portadores
         carrier = VGroup(
-            VGroup(Text("A carrier map sends, monotonously, each simplex in", font_size=30),
+            VGroup(Text("A carrier map sends, monotonously, each simplex in"),
                    MathTex(r"I")).arrange(RIGHT),
-            VGroup(Text("to a subcomplex of", font_size=30),
+            VGroup(Text("to a subcomplex of"),
                    MathTex(r"O")).arrange(RIGHT)).arrange(DOWN)
         self.play(FadeIn(carrier))
         self.next_slide()
         carrier_2 = VGroup(
-            VGroup(Text("A carrier map is an order preserving function from", font_size=30),
+            VGroup(Text("A carrier map is an order preserving function from"),
                    MathTex(r"I")).arrange(RIGHT),
-            VGroup(Text("into the lattice of subcomplexes of", font_size=30),
+            VGroup(Text("into the lattice of subcomplexes of"),
                    MathTex(r"O")).arrange(RIGHT)).arrange(DOWN)
         self.play(Transform(carrier, carrier_2))
         self.next_slide()
@@ -1026,7 +1033,7 @@ class DC(BlackSlide):
               .save_state())
 
         task = Arrow(I.get_center(), SO.get_center(), color=BLACK, buff=.5, stroke_width=3)
-        task_t = LabeledDot(MathTex(r"\mathcal{T}"), point=task.get_center() + UP * .5)
+        task_t = LabeledDot(MathTex(r"\mathcal{T}'"), point=task.get_center() + UP * .5)
 
         protocol = Arrow(I.get_center(), SP.get_center(), color=BLACK, buff=.5, stroke_width=3)
         protocol_t = LabeledDot(MathTex(r"\mathcal{E}"), point=protocol.get_center() + LEFT * .5)
@@ -1061,10 +1068,12 @@ class DC(BlackSlide):
         NewSP = (MathTex(r"S(\operatorname{WF}(\Psi_{n}G))")
                  .move_to(SP)
                  .save_state())
+        NewT = LabeledDot(MathTex(r"\mathcal{T}"), point=task_t.get_center())
         self.next_slide()
         self.play(AnimationGroup(Transform(I, NewI),
                                  Transform(protocol_t, Newprotocol_t),
-                                 Transform(SP, NewSP)))
+                                 Transform(SP, NewSP),
+                                 Transform(task_t, NewT)))
         all = VGroup(NewI, SO, NewSP, decision, decision_t, protocol, task, task_t)
         IG = MathTex(r"I").move_to(NewI)
         SPG = MathTex(r"S(\operatorname{WF}(I))").move_to(NewSP)
@@ -1100,6 +1109,10 @@ class DC(BlackSlide):
                         stroke_width=3)
         funcion_t = LabeledDot(MathTex(r"f'"), point=funcion.get_center() + UP * .5)
         funcion_completa = VGroup(funcion_t, funcion).scale(.8)
+        task_t_2 = LabeledDot(MathTex(r"\mathcal{T}"), point=task_t.get_center() + UP * .5)
+        #Transform(task_t, task_t_2)
+        all.remove(task_t)
+        all.add(task_t_2)
         self.play(Write(all.scale(.8)))
         self.next_slide()
 

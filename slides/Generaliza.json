@@ -79,14 +79,80 @@
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Generaliza\\595fab6578d2b571befcb49adf98c6e909aab385b2668a78f86a0c06520bacb4.mp4",
-      "rev_file": "slides\\files\\Generaliza\\595fab6578d2b571befcb49adf98c6e909aab385b2668a78f86a0c06520bacb4_reversed.mp4",
+      "file": "slides\\files\\Generaliza\\d828f29534befccdc8a005fc9e6ead68069704e3bd6196234ec895416f0ed039.mp4",
+      "rev_file": "slides\\files\\Generaliza\\d828f29534befccdc8a005fc9e6ead68069704e3bd6196234ec895416f0ed039_reversed.mp4",
       "loop": false,
       "auto_next": false
     },
     {
-      "file": "slides\\files\\Generaliza\\046e2e200ee9edf410546bc2eba6422c63dda66a9be9177a2138c556f96faa61.mp4",
-      "rev_file": "slides\\files\\Generaliza\\046e2e200ee9edf410546bc2eba6422c63dda66a9be9177a2138c556f96faa61_reversed.mp4",
+      "file": "slides\\files\\Generaliza\\67ea85366a33edb2b1174d5f1b6f154c64b28f1e4e28a823409e2f30c1cf1918.mp4",
+      "rev_file": "slides\\files\\Generaliza\\67ea85366a33edb2b1174d5f1b6f154c64b28f1e4e28a823409e2f30c1cf1918_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\e8117947e2603343cc58a3fddafda87e6c6f81a2da7857eb0622bcbcf9ecf3e8.mp4",
+      "rev_file": "slides\\files\\Generaliza\\e8117947e2603343cc58a3fddafda87e6c6f81a2da7857eb0622bcbcf9ecf3e8_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\a27534defab0ea8e56e55505752b5a71f86303d01dd7b35f41be995d702611c0.mp4",
+      "rev_file": "slides\\files\\Generaliza\\a27534defab0ea8e56e55505752b5a71f86303d01dd7b35f41be995d702611c0_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\1b9ed02e906b7b5841b3a41cef7ae781162e22912b31428fa74bf4b9cdecca2b.mp4",
+      "rev_file": "slides\\files\\Generaliza\\1b9ed02e906b7b5841b3a41cef7ae781162e22912b31428fa74bf4b9cdecca2b_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\54cc311ca40b557f0e94c5d47d18e06eeb163ef9859e7d06743e1952f4fad713.mp4",
+      "rev_file": "slides\\files\\Generaliza\\54cc311ca40b557f0e94c5d47d18e06eeb163ef9859e7d06743e1952f4fad713_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\13a0e1151ebd5939f9b020ccf2db2755e275118b5c85ba82144b06ba33c3b137.mp4",
+      "rev_file": "slides\\files\\Generaliza\\13a0e1151ebd5939f9b020ccf2db2755e275118b5c85ba82144b06ba33c3b137_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\0fe3d1df98875e2452d5667e8cdcbeed122fd18aa8445ea8052616c79a4ce76f.mp4",
+      "rev_file": "slides\\files\\Generaliza\\0fe3d1df98875e2452d5667e8cdcbeed122fd18aa8445ea8052616c79a4ce76f_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\a4076e1c9fde3ad91ca6f9e1bbb9ffc966ef6ec708b79cef1603b0f4955bc9ab.mp4",
+      "rev_file": "slides\\files\\Generaliza\\a4076e1c9fde3ad91ca6f9e1bbb9ffc966ef6ec708b79cef1603b0f4955bc9ab_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\caff539fe43dd85185397ba18ea34bc9ab154d68602b2d05172b835a81bd5f2e.mp4",
+      "rev_file": "slides\\files\\Generaliza\\caff539fe43dd85185397ba18ea34bc9ab154d68602b2d05172b835a81bd5f2e_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\ed73da806d665066f8fbd6a968f75bdc78431d5334813a8641d851b32f593e7a.mp4",
+      "rev_file": "slides\\files\\Generaliza\\ed73da806d665066f8fbd6a968f75bdc78431d5334813a8641d851b32f593e7a_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\c49961a053bf6a69b6fb7864a8c20dd743a89a1631335ac80f49d5fc67748a7a.mp4",
+      "rev_file": "slides\\files\\Generaliza\\c49961a053bf6a69b6fb7864a8c20dd743a89a1631335ac80f49d5fc67748a7a_reversed.mp4",
+      "loop": false,
+      "auto_next": false
+    },
+    {
+      "file": "slides\\files\\Generaliza\\d26365055b040bf012966949e723dcf17ca3d966aa06429633806a38c8740157.mp4",
+      "rev_file": "slides\\files\\Generaliza\\d26365055b040bf012966949e723dcf17ca3d966aa06429633806a38c8740157_reversed.mp4",
       "loop": false,
       "auto_next": false
     }
