@@ -1,8 +1,7 @@
-from colour import Color
-from manim import *
-from manim_slides.slide import Slide
 import numpy as np
+from manim import *
 from manim import TexTemplate
+from manim_slides.slide import Slide
 
 my_template = TexTemplate()
 my_template.add_to_preamble(r"\usepackage[svgnames]{xcolor}")
@@ -34,7 +33,7 @@ class BlackSlide(Slide, Scene):
 
     def create_title(self, title):
         self.wait_time_between_slides = .1
-        self.play(Create(title))
+        self.wipe(None, title, direction=RIGHT)
         self.next_slide()
         self.wait_time_between_slides = 0
 
